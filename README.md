@@ -1,8 +1,6 @@
 Todo:
 - Move all current wordlists to the SSD
 - Compile doubleDictionary.txt and doubleDictionaryRules.txt on the SSD - fill in sizes and compilation times below
-- Test the steps to make the starTrek.txt file
-- Are capitals of dictionary.txt and starTrekBase.txt making it in?
 - Create all the specialized wordlists
 - Go through Applying Password Cracking setup and verify all the times for password cracking
 - Double check everything and commit
@@ -26,6 +24,24 @@ This details my password cracking setup with John the Ripper.
 ### Personalized Wordlists
 * starTrek.txt (621 MB)
     * This wordlist contains 1,100 commonly used words, major characters, nicknames, slang, etc. The personalDictionary and personalSymbols rules in johnrules.rul were also applied to this wordlist.
+* starWars.txt
+* harryPotter.txt
+* doctorWho.txt
+* anime.txt
+* spanish.txt
+* lds.txt
+* music.txt
+* vehicles.txt
+* marvel.txt
+* outdoors.txt
+* sports.txt
+* videoGames.txt
+* boardGames.txt
+* history.txt
+* lordOfTheRings.txt
+* gameOfThrones.txt
+* Other languages
+* Birth country
 
 ## How to Compile Wordlists
 ### General Wordlists
@@ -38,7 +54,7 @@ This details my password cracking setup with John the Ripper.
 * To produce dictionaryRules.txt
     * Using dictionary.txt, run the command `john --wordlist=dictionary.txt --rules=personalDictionary --stdout > dictionaryRules1.txt`
     * To eliminate all passwords over 10 characters, run the command `perl -lne 'length()<10 && print' dictionaryRules1.txt > dictionaryRules.txt; rm dictionaryRules1.txt` (92% of passwords are between 6-10 characters in length). This cuts down the wordlist by 13 GB.
-    * This takes around 10 minutes.
+    * This takes around 10 minutes. 12:37
 * To produce doubleDictionary.txt
     * Compile and run the doubleDictionary.cpp file to produce the doubleDictionary.txt wordlist
     * This .cpp file uses both dictionary.txt and dictionary2.txt files, so make sure they are in the same directory
@@ -51,7 +67,7 @@ This details my password cracking setup with John the Ripper.
 * To produce starTrek.txt
     * Using starTrekBase.txt, run the commands `john --wordlist=starTrekBase.txt --rules=personalDictionary --stdout > st1`, `john --wordlist=starTrekBase.txt --rules=personalSymbols --stdout > st2`, and `cat starTrekBase.txt st1 st2 > starTrek1.txt; rm st1 st2;`
     * To eliminate duplicates, run the command `sort starTrek1.txt > st1; uniq st1 > starTrek.txt; rm st1 starTrek1.txt;`
-    * This takes around 10 minutes
+    * This takes around 5 minutes
 
 ## Personalized Wordlist
 The point of list of details is to find words that aren't on my wordlist, or uncommon words/phrases
