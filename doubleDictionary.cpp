@@ -6,6 +6,12 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
     cout << "Starting..." << endl;
+    string symbol = "";
+
+    if (argc > 1) {
+        symbol = argv[1];
+        cout << "Symbol in between words is " << symbol << endl;
+    }
 
     ifstream input("dictionary.txt");
     ofstream output("doubleDictionary.txt");
@@ -24,8 +30,8 @@ int main(int argc, char* argv[]) {
         }
 
         string line2;
-        while (getline(inputDouble, line2)) {
-            output << line1 << line2 << endl;
+        while (getline(inputDouble, line2)&&line2!="") {
+            output << line1 << symbol << line2 << endl;
         }
 
         inputDouble.close();
