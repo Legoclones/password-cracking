@@ -1,5 +1,4 @@
 Todo:
-- Move all current wordlists to the SSD
 - Compile doubleDictionary.txt and doubleDictionaryRules.txt on the SSD - fill in sizes and compilation times below
 - Create all the specialized wordlists
 - Go through Applying Password Cracking setup and verify all the times for password cracking
@@ -11,10 +10,10 @@ This details my password cracking setup with John the Ripper.
 ## Wordlists
 ### General Wordlists
 * crackStation.txt (14.6 GB)
-    * This is a list from [crackstation.net](https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm) that contains every wordlist, dictionary, and password database leak that the creator could find, along with every word in Wikipedia from 2010 and books from Project Gutenberg. 
+    * This is a list from [crackstation.net](https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm) that contains every wordlist, dictionary, and password database leak that the creator could find, along with every word in Wikipedia from 2010 and books from Project Gutenberg.
 * dictionary.txt (278 KB)
     * This is a wordlist I've compiled that has the 39,000 most common words, animals, names, colors, elements, foods, jobs, body parts, and cities. This isn't meant to be exhaustive, but rather have words that the general public would most likely use in a password. All words over a length of 10 were removed and the wordlist has no symbols or uppercase characters.
-* dictionaryRules.txt (?? GB)
+* dictionaryRules.txt (4.95 GB)
     * This wordlist is dictionary.txt, but modified according to johnrules.rul's personalDictionary rule list. Since less than 4% of passwords normally have symbols, no symbols are included in these rules. 
 * doubleDictionary.txt (?? GB)
     * This wordlist has each entry in dictionary.txt concatenated with every other entry in dictionary.txt (ie, mycat mybed myharp ...). All words over a length of 10 were removed and the wordlist has no symbols or uppercase characters.
@@ -24,8 +23,10 @@ This details my password cracking setup with John the Ripper.
 ### Personalized Wordlists
 * starTrek.txt (621 MB)
     * This wordlist contains 1,100 commonly used words, major characters, nicknames, slang, etc. The personalDictionary and personalSymbols rules in johnrules.rul were also applied to this wordlist.
-* starWars.txt
-* harryPotter.txt
+* starWars.txt (401 MB)
+    * This wordlist contains 780 major characters, creatures, alien races, worlds, objects, slang, quotes, vehicles, weapons, etc. The personalDictionary and personalSymbols rules in johnrules.rul were also applied to this wordlist. 
+* harryPotter.txt (?? MB)
+    * This wordlist contains ?? major characters, spells, creatures, book titles, places, items, quidditch positions, slang, etc. The personalDictionary and personalSymbols rules in johnrules.rul were also applied to this wordlist.
 * doctorWho.txt
 * anime.txt
 * spanish.txt
@@ -40,6 +41,7 @@ This details my password cracking setup with John the Ripper.
 * history.txt
 * lordOfTheRings.txt
 * gameOfThrones.txt
+* memes.txt
 * Other languages
 * Birth country
 
@@ -54,7 +56,7 @@ This details my password cracking setup with John the Ripper.
 * To produce dictionaryRules.txt
     * Using dictionary.txt, run the command `john --wordlist=dictionary.txt --rules=personalDictionary --stdout > dictionaryRules1.txt`
     * To eliminate all passwords over 10 characters, run the command `perl -lne 'length()<10 && print' dictionaryRules1.txt > dictionaryRules.txt; rm dictionaryRules1.txt` (92% of passwords are between 6-10 characters in length). This cuts down the wordlist by 13 GB.
-    * This takes around 10 minutes. 12:37
+    * This takes around 30 minutes.
 * To produce doubleDictionary.txt
     * Compile and run the doubleDictionary.cpp file to produce the doubleDictionary.txt wordlist
     * This .cpp file uses both dictionary.txt and dictionary2.txt files, so make sure they are in the same directory
@@ -67,6 +69,10 @@ This details my password cracking setup with John the Ripper.
 * To produce starTrek.txt
     * Using starTrekBase.txt, run the commands `john --wordlist=starTrekBase.txt --rules=personalDictionary --stdout > st1`, `john --wordlist=starTrekBase.txt --rules=personalSymbols --stdout > st2`, and `cat starTrekBase.txt st1 st2 > starTrek1.txt; rm st1 st2;`
     * To eliminate duplicates, run the command `sort starTrek1.txt > st1; uniq st1 > starTrek.txt; rm st1 starTrek1.txt;`
+    * This takes around 5 minutes
+* To produce starWars.txt
+    * Using starWarsBase.txt, run the commands `john --wordlist=starWarsBase.txt --rules=personalDictionary --stdout > sw1`, `john --wordlist=starWarsBase.txt --rules=personalSymbols --stdout > sw2`, and `cat starWarsBase.txt sw1 sw2 > starWars1.txt; rm sw1 sw2;`
+    * To eliminate duplicates, run the command `sort starWars1.txt > sw1; uniq sw1 > starWars.txt; rm sw1 starWars1.txt;`
     * This takes around 5 minutes
 
 ## Personalized Wordlist
