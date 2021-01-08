@@ -1,15 +1,25 @@
 Todo:
 - Create all the specialized wordlists
-- Create fewCharacters.txt
+- Create details program
 
 # Password Cracking Setup README
 This details my password cracking setup with John the Ripper.
+
+## Contents
+* [Wordlists](wordlists)
+    * [General Wordlists](general-wordlists)
+    * [Specialized Wordlists](specialized-wordlists)
+* [Applying Password Cracking Setup](applying-password-cracking-setup)
+* [How to Compile Wordlists](how-to-compile-wordlists)
+    * [General Wordlists](general-wordlists-1)
+    * [Specialized Wordlists](specialized-wordlists-1)
+* [Individualized Wordlists](individualized-wordlists)
 
 ## Wordlists
 ### General Wordlists
 * crackStation.txt (14.6 GB)
     * This is a list from [crackstation.net](https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm) that contains every wordlist, dictionary, and password database leak that the creator could find, along with every word in Wikipedia from 2010 and books from Project Gutenberg.
-* fewCharacters.txt (?? GB)
+* fewCharacters.txt (43.6 GB)
     * This contains every possible password from 1-5 characters long, all symbols included. 
 * dictionary.txt (278 KB)
     * This is a wordlist I've compiled that has the 39,000 most common words, animals, names, colors, elements, foods, jobs, body parts, and cities. This isn't meant to be exhaustive, but rather have words that the general public would most likely use in a password. All words over a length of 10 were removed and the wordlist has no symbols or uppercase characters.
@@ -45,17 +55,38 @@ This details my password cracking setup with John the Ripper.
 * Other languages
 * Birth country
 
+## Applying Password Cracking Setup
+John the Ripper can normally go through a 10 GB wordlist in a minute.
+
+1. Use the crackStation.txt wordlist with no rules (~1.5 minutes)
+    * *Note - this should be able to capture a good chunk of the passwords*
+2. Use the dictionary.txt wordlist with no rules (~1 second)
+3. Use the dictionaryRules.txt wordlist with no rules (~1 minute)
+    * *Note - this wordlist contains no symbols, as over 96% of passwords normally don't have any symbols*
+4. Use the doubleDictionary.txt wordlist with no rules (~2 minutes)
+5. Use the fewCharacters.txt wordlist with no rules (~4 minutes)
+    * *Note - this wordlist contains all possible passwords between 1-5 characters*
+6. Use the doubleDictionaryRules.txt wordlist with no rules (~40 minutes)
+    * *Note - this only uses a couple of rules, any more would take up too much storage space. Step 9 is for the remaining optional rules.*
+7. **Optional** - If possible, use an individualized wordlist using the format above
+8. **Optional** - If possible, use a specialized wordlist that matches the target
+9. Other options:
+    * dictionary.txt with personalSymbols rule list
+    * doubleDictionary.txt with personalSymbols, personalShortOne, or personalShortTwo rule lists
+    * doubleDictionary.txt with words separated by _ or .
+    * Incremental ASCII starting with 6 characters
+
 ## How to Compile Wordlists
 ### General Wordlists
-* Make sure John the Ripper and perl are installed
+* Make sure John the Ripper, perl, and crunch are installed
 * Edit the john.conf file and insert the rules found in johnrules.rul
 * Make an exact copy of dictionary.txt and name it dictionary2.txt
 * To produce crackStation.txt
     * Download crackStation.txt from [crackstation.net](https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm)
     * Depending on download and file read/write speeds, this can take approximately 20 minutes
 * To produce fewCharacters.txt
-    * ??
-    * This takes around ??
+    * Using crunch from the command line, run the command `crunch 1 5 -f charset.lst all -o fewCharacters.txt`
+    * This takes around 30 minutes
 * To produce dictionaryRules.txt
     * Using dictionary.txt, run the command `john --wordlist=dictionary.txt --rules=personalDictionary --stdout > dictionaryRules1.txt`
     * To eliminate all passwords over 10 and under 6 characters, run the command `perl -lne 'length()<11 && length()>5 && print' dictionaryRules1.txt > dictionaryRules.txt; rm dictionaryRules1.txt` (92% of passwords are between 6-10 characters in length). This cuts down the wordlist by 9 GB.
@@ -82,7 +113,7 @@ This details my password cracking setup with John the Ripper.
     * To eliminate duplicates, run the command `sort starWars2.txt > sw1; uniq sw1 > starWars.txt; rm sw1 starWars2.txt;`
     * This takes around 5 minutes
 
-## Individualized Wordlist
+## Individualized Wordlists
 The point of list of details is to find words that aren't on my wordlist, or uncommon words/phrases
 
 First name:
@@ -137,24 +168,3 @@ Children nicknames:
 Children birthdates:
 Pet names:
 Other info:
-
-## Applying Password Cracking Setup
-John the Ripper can normally go through a 10 GB wordlist in a minute.
-
-1. Use the crackStation.txt wordlist with no rules (~1.5 minutes)
-    * *Note - this should be able to capture a good chunk of the passwords*
-2. Use the dictionary.txt wordlist with no rules (~1 second)
-3. Use the dictionaryRules.txt wordlist with no rules (~1 minute)
-    * *Note - this wordlist contains no symbols, as over 96% of passwords normally don't have any symbols*
-4. Use the doubleDictionary.txt wordlist with no rules (~2 minutes)
-5. Use the fewCharacters.txt wordlist with no rules (~4 minutes)
-    * *Note - this wordlist contains all possible passwords between 1-5 characters*
-6. Use the doubleDictionaryRules.txt wordlist with no rules (~40 minutes)
-    * *Note - this only uses a couple of rules, any more would take up too much storage space. Step 9 is for the remaining optional rules.*
-7. **Optional** - If possible, use an individualized wordlist using the format above
-8. **Optional** - If possible, use a specialized wordlist that matches them
-9. Other options:
-    * dictionary.txt with personalSymbols rule list
-    * doubleDictionary.txt with personalSymbols, personalShortOne, or personalShortTwo rule lists
-    * doubleDictionary.txt with words separated by _ or .
-    * Incremental ASCII starting with 6 characters
