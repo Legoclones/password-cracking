@@ -56,7 +56,7 @@ This details my password cracking setup with John the Ripper.
 * Birth country
 
 ## Applying Password Cracking Setup
-John the Ripper can normally go through a 10 GB wordlist in a minute.
+John the Ripper can normally go through a 10 GB wordlist in a minute*.
 
 1. Use the crackStation.txt wordlist with no rules (~1.5 minutes)
     * *Note - this should be able to capture a good chunk of the passwords*
@@ -75,6 +75,8 @@ John the Ripper can normally go through a 10 GB wordlist in a minute.
     * doubleDictionary.txt with personalSymbols, personalShortOne, or personalShortTwo rule lists
     * doubleDictionary.txt with words separated by _ or .
     * Incremental ASCII starting with 6 characters
+
+**All times are based off of my personal computer's specs. I have an i7-10510U processor (8 processing threads, 1.80 GHz base processing speed), 12 GB of RAM, and a Solid State Drive. These times were also computed with no/few other programs running.*
 
 ## How to Compile Wordlists
 ### General Wordlists
@@ -102,16 +104,10 @@ John the Ripper can normally go through a 10 GB wordlist in a minute.
     * This takes around 20 hours.
 
 ### Specialized Wordlists
-* To produce starTrek.txt
-    * Using starTrekBase.txt, run the commands `john --wordlist=starTrekBase.txt --rules=personalDictionary --stdout > st1`, `john --wordlist=starTrekBase.txt --rules=personalSymbols --stdout > st2`, and `cat starTrekBase.txt st1 st2 > starTrek1.txt; rm st1 st2;`
-    * To eliminate all passwords under 6 characters, run the command `perl -lne 'length()>5 && print' starTrek1.txt > starTrek2.txt; rm starTrek1.txt`.
-    * To eliminate duplicates, run the command `sort starTrek2.txt > st1; uniq st1 > starTrek.txt; rm st1 starTrek2.txt;`
-    * This takes around 5 minutes
-* To produce starWars.txt
-    * Using starWarsBase.txt, run the commands `john --wordlist=starWarsBase.txt --rules=personalDictionary --stdout > sw1`, `john --wordlist=starWarsBase.txt --rules=personalSymbols --stdout > sw2`, and `cat starWarsBase.txt sw1 sw2 > starWars1.txt; rm sw1 sw2;`
-    * To eliminate all passwords under 6 characters, run the command `perl -lne 'length()>5 && print' starWars1.txt > starWars2.txt; rm starWars1.txt`.
-    * To eliminate duplicates, run the command `sort starWars2.txt > sw1; uniq sw1 > starWars.txt; rm sw1 starWars2.txt;`
-    * This takes around 5 minutes
+* To produce starTrek.txt, run these commands. This takes around 5 minutes. 
+    * `john --wordlist=starTrekBase.txt --rules=personalDictionary --stdout > st1; john --wordlist=starTrekBase.txt --rules=personalSymbols --stdout > st2; cat starTrekBase.txt st1 st2 > starTrek1.txt; rm st1 st2; perl -lne 'length()>5 && print' starTrek1.txt > starTrek2.txt; rm starTrek1.txt; sort starTrek2.txt > st1; uniq st1 > starTrek.txt; rm st1 starTrek2.txt;`
+* To produce starWars.txt, run these commands. This takes around 5 minutes.
+    * `john --wordlist=starWarsBase.txt --rules=personalDictionary --stdout > sw1; john --wordlist=starWarsBase.txt --rules=personalSymbols --stdout > sw2; cat starWarsBase.txt sw1 sw2 > starWars1.txt; rm sw1 sw2; perl -lne 'length()>5 && print' starWars1.txt > starWars2.txt; rm starWars1.txt; sort starWars2.txt > sw1; uniq sw1 > starWars.txt; rm sw1 starWars2.txt;`
 
 ## Individualized Wordlists
 The point of list of details is to find words that aren't on my wordlist, or uncommon words/phrases
