@@ -6,14 +6,14 @@ Todo:
 This details my password cracking setup with John the Ripper.
 
 ## Contents
-* [Wordlists](wordlists)
-    * [General Wordlists](general-wordlists)
-    * [Specialized Wordlists](specialized-wordlists)
-* [Applying Password Cracking Setup](applying-password-cracking-setup)
-* [How to Compile Wordlists](how-to-compile-wordlists)
-    * [General Wordlists](general-wordlists-1)
-    * [Specialized Wordlists](specialized-wordlists-1)
-* [Individualized Wordlists](individualized-wordlists)
+* [Wordlists](#wordlists)
+    * [General Wordlists](#general-wordlists)
+    * [Specialized Wordlists](#specialized-wordlists)
+* [Applying Password Cracking Setup](#applying-password-cracking-setup)
+* [How to Compile Wordlists](#how-to-compile-wordlists)
+    * [General Wordlists](#general-wordlists-1)
+    * [Specialized Wordlists](#specialized-wordlists-1)
+* [Individualized Wordlists](#individualized-wordlists)
 
 ## Wordlists
 ### General Wordlists
