@@ -188,10 +188,6 @@ deathlyHallows
 dedalus
 dedalusdiggle
 dedalusDiggle
-defenceagainstthedarkarts
-defenceAgainstTheDarkArts
-defenseagainstthedarkarts
-defenseAgainstTheDarkArts
 deflatingdraught
 deflatingDraught
 delacour
@@ -525,9 +521,7 @@ jinx
 johndawlish
 johnDawlish
 jorkins
-justinfinch-fletchley
 justinfinchfletchley
-justinFinch-Fletchley
 justinFinchFletchley
 kappa
 karkaroff

@@ -31,7 +31,7 @@ This details my password cracking setup with John the Ripper.
     * This wordlist is doubleDictionary.txt, but modified according to johnrules.rul's personalDoubleDictionary rule list. All passwords over a length of 16 were removed.
 
 ### Specialized Wordlists
-In all of these wordlists, the personalDictionary and personalSymbols rules in johnrules.rul were applied. Only passwords over 5 characters long are included.
+In all of these wordlists, the personalDictionary and personalSymbols rules in johnrules.rul were applied. Only passwords over 5 and under 21 characters long are included.
 
 * starTrek.txt (??? MB)
     * This wordlist contains 1,100 commonly used words, major characters, nicknames, slang, etc.
@@ -40,7 +40,10 @@ In all of these wordlists, the personalDictionary and personalSymbols rules in j
 * harryPotter.txt (??? MB)
     * This wordlist contains 1,000 major characters, spells, creatures, book titles, places, items, quidditch positions, slang, etc.
 * usLocations.txt (??? MB)
-    * This wordlist contains 25,000 cities, counties, and states in the United States of America. 
+    * This wordlist contains 25,000 cities, counties, and states of the United States of America.
+* canadianLocations.txt (??? MB)
+    * This wordlist contains 3,000 cities and provinces of Canada.
+* internationalLocations.txt (https://simplemaps.com/data/world-cities + countries + islands + etc.)
 * doctorWho.txt
 * anime.txt
 * spanish.txt
@@ -56,6 +59,8 @@ In all of these wordlists, the personalDictionary and personalSymbols rules in j
 * lordOfTheRings.txt
 * gameOfThrones.txt
 * memes.txt
+* celebrities.txt
+* popularplaces.txt (national parks, landmarks, etc.)
 * Other languages
 * Birth country
 
@@ -109,13 +114,15 @@ John the Ripper can normally go through a 10 GB wordlist in a minute*.
 
 ### Specialized Wordlists
 * To produce starTrek.txt, run these commands. This takes around 5 minutes. 
-    * `john --wordlist=starTrekBase.txt --rules=personalDictionary --stdout > st1; john --wordlist=starTrekBase.txt --rules=personalSymbols --stdout > st2; cat starTrekBase.txt st1 st2 > starTrek1.txt; rm st1 st2; perl -lne 'length()>5 && print' starTrek1.txt > starTrek2.txt; rm starTrek1.txt; sort starTrek2.txt > st1; uniq st1 > starTrek.txt; rm st1 starTrek2.txt;`
+    * `john --wordlist=starTrekBase.txt --rules=personalDictionary --stdout > st1; john --wordlist=starTrekBase.txt --rules=personalSymbols --stdout > st2; cat starTrekBase.txt st1 st2 > starTrek1.txt; rm st1 st2; perl -lne 'length()>5 && length()<21 && print' starTrek1.txt > starTrek2.txt; rm starTrek1.txt; sort starTrek2.txt > st1; uniq st1 > starTrek.txt; rm st1 starTrek2.txt;`
 * To produce starWars.txt, run these commands. This takes around 5 minutes.
-    * `john --wordlist=starWarsBase.txt --rules=personalDictionary --stdout > sw1; john --wordlist=starWarsBase.txt --rules=personalSymbols --stdout > sw2; cat starWarsBase.txt sw1 sw2 > starWars1.txt; rm sw1 sw2; perl -lne 'length()>5 && print' starWars1.txt > starWars2.txt; rm starWars1.txt; sort starWars2.txt > sw1; uniq sw1 > starWars.txt; rm sw1 starWars2.txt;`
+    * `john --wordlist=starWarsBase.txt --rules=personalDictionary --stdout > sw1; john --wordlist=starWarsBase.txt --rules=personalSymbols --stdout > sw2; cat starWarsBase.txt sw1 sw2 > starWars1.txt; rm sw1 sw2; perl -lne 'length()>5 && length()<21 && print' starWars1.txt > starWars2.txt; rm starWars1.txt; sort starWars2.txt > sw1; uniq sw1 > starWars.txt; rm sw1 starWars2.txt;`
 * To produce harryPotter.txt, run these commands. This takes around ?? minutes.
-    * `john --wordlist=harryPotterBase.txt --rules=personalDictionary --stdout > hp1; john --wordlist=harryPotterBase.txt --rules=personalSymbols --stdout > hp2; cat harryPotterBase.txt hp1 hp2 > harryPotter1.txt; rm hp1 hp2; perl -lne 'length()>5 && print' harryPotter1.txt > harryPotter2.txt; rm harryPotter1.txt; sort harryPotter2.txt > hp1; uniq hp1 > harryPotter.txt; rm hp1 harryPotter2.txt;`
+    * `john --wordlist=harryPotterBase.txt --rules=personalDictionary --stdout > hp1; john --wordlist=harryPotterBase.txt --rules=personalSymbols --stdout > hp2; cat harryPotterBase.txt hp1 hp2 > harryPotter1.txt; rm hp1 hp2; perl -lne 'length()>5 && length()<21 && print' harryPotter1.txt > harryPotter2.txt; rm harryPotter1.txt; sort harryPotter2.txt > hp1; uniq hp1 > harryPotter.txt; rm hp1 harryPotter2.txt;`
 * To produce usLocations.txt, run these commands. This takes around ?? minutes.
-    * `john --wordlist=usLocationsBase.txt --rules=personalDictionary --stdout > usl1; john --wordlist=usLocationsBase.txt --rules=personalSymbols --stdout > usl2; cat usLocationsBase.txt usl1 usl2 > usLocations1.txt; rm usl1 usl2; perl -lne 'length()>5 && print' usLocations1.txt > usLocations2.txt; rm usLocations1.txt; sort usLocations2.txt > usl1; uniq usl1 > usLocations.txt; rm usl1 usLocations2.txt;`
+    * `john --wordlist=usLocationsBase.txt --rules=personalDictionary --stdout > usl1; john --wordlist=usLocationsBase.txt --rules=personalSymbols --stdout > usl2; cat usLocationsBase.txt usl1 usl2 > usLocations1.txt; rm usl1 usl2; perl -lne 'length()>5 && length()<21 && print' usLocations1.txt > usLocations2.txt; rm usLocations1.txt; sort usLocations2.txt > usl1; uniq usl1 > usLocations.txt; rm usl1 usLocations2.txt;`
+* To produce canadianLocations.txt, run these commands. This takes around ?? minutes.
+    * `john --wordlist=canadianLocationsBase.txt --rules=personalDictionary --stdout > cl1; john --wordlist=canadianLocationsBase.txt --rules=personalSymbols --stdout > cl2; cat canadianLocationsBase.txt cl1 cl2 > canadianLocations1.txt; rm cl1 cl2; perl -lne 'length()>5 && length()<21 && print' canadianLocations1.txt > canadianLocations2.txt; rm canadianLocations1.txt; sort canadianLocations2.txt > cl1; uniq cl1 > canadianLocations.txt; rm cl1 canadianLocations2.txt;`
 
 ## Individualized Wordlists
 The point of list of details is to find words that aren't on my wordlist, or uncommon words/phrases

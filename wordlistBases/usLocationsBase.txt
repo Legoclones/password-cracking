@@ -9,8 +9,6 @@ abercrombie
 aberdeen
 aberdeengardens
 aberdeenGardens
-aberdeenprovingground
-aberdeenProvingGround
 abernathy
 abeytas
 abilene
@@ -168,8 +166,6 @@ alcester
 alcolu
 alcona
 alcorn
-alcornstateuniversity
-alcornStateUniversity
 alderpoint
 alderson
 alderton
@@ -488,9 +484,6 @@ applewold
 applewood
 appling
 appomattox
-aptoshills-larkinvalley
-aptoshillslarkinvalley
-aptosHills-LarkinValley
 aquadale
 aquasco
 aquebogue
@@ -614,8 +607,6 @@ arrowrock
 arrowRock
 arrowsmith
 arroyo
-arroyocoloradoestates
-arroyoColoradoEstates
 arroyogardens
 arroyoGardens
 arroyogrande
@@ -1298,9 +1289,6 @@ belknap
 bellacres
 bellAcres
 bellaire
-bellair-meadowbrookterrace
-bellairmeadowbrookterrace
-bellair-MeadowbrookTerrace
 bellamy
 bellarthur
 bellArthur
@@ -1331,8 +1319,6 @@ belleChasse
 bellechester
 bellefontaine
 belleFontaine
-bellefontaineneighbors
-bellefontaineNeighbors
 bellefonte
 bellefourche
 belleFourche
@@ -1670,8 +1656,6 @@ bigstonecity
 bigStoneCity
 bigstonegap
 bigStoneGap
-bigthicketlakeestates
-bigThicketLakeEstates
 bigtimber
 bigTimber
 bigwater
@@ -1776,9 +1760,7 @@ blackmountain
 blackMountain
 blackoak
 blackOak
-blackpoint-greenpoint
 blackpointgreenpoint
-blackPoint-GreenPoint
 blackriver
 blackRiver
 blackriverfalls
@@ -1999,8 +1981,6 @@ bonAir
 bonanza
 bonanzahills
 bonanzaHills
-bonanzamountainestates
-bonanzaMountainEstates
 bonaparte
 bonaquajunction
 bonAquaJunction
@@ -2354,9 +2334,6 @@ bristolBay
 bristow
 bristowcove
 bristowCove
-brittanyfarms-thehighlands
-brittanyfarmsthehighlands
-brittanyFarms-TheHighlands
 britton
 broadbrook
 broadBrook
@@ -2620,8 +2597,6 @@ bulloch
 bullock
 bullrun
 bullRun
-bullrunmountainestates
-bullRunMountainEstates
 bullsgap
 bullsGap
 bullshoals
@@ -3463,9 +3438,6 @@ centralGarage
 centralgardens
 centralGardens
 centralhatchee
-centralheights-midlandcity
-centralheightsmidlandcity
-centralHeights-MidlandCity
 centralhigh
 centralHigh
 centralia
@@ -3527,9 +3499,7 @@ chalfant
 chalfont
 chalkhill
 chalkyitsik
-challenge-brownsville
 challengebrownsville
-challenge-Brownsville
 challis
 chalmers
 chalmette
@@ -3699,8 +3669,6 @@ chesapeakebeach
 chesapeakeBeach
 chesapeakecity
 chesapeakeCity
-chesapeakeranchestates
-chesapeakeRanchEstates
 cheshire
 cheshirevillage
 cheshireVillage
@@ -3738,10 +3706,6 @@ chevychase
 chevyChase
 chevychaseheights
 chevyChaseHeights
-chevychasesectionfive
-chevyChaseSectionFive
-chevychasesectionthree
-chevyChaseSectionThree
 chevychaseview
 chevyChaseView
 chevychasevillage
@@ -3995,9 +3959,6 @@ clarksPoint
 clarkssummit
 clarksSummit
 clarkston
-clarkstonheights-vineland
-clarkstonheightsvineland
-clarkstonHeights-Vineland
 clarksville
 clarksvillecity
 clarksvilleCity
@@ -4424,8 +4385,6 @@ conner
 connersville
 connerton
 connerville
-conningtowersnautiluspark
-conningTowersNautilusPark
 connorville
 conover
 conrad
@@ -4532,8 +4491,6 @@ corder
 cordeslakes
 cordesLakes
 cordova
-cordrysweetwaterlakes
-cordrySweetwaterLakes
 corinne
 corinth
 corley
@@ -4889,8 +4846,6 @@ crystalbeach
 crystalBeach
 crystalcity
 crystalCity
-crystaldownscountryclub
-crystalDownsCountryClub
 crystalfalls
 crystalFalls
 crystallake
@@ -5050,8 +5005,6 @@ daltoncity
 daltonCity
 daltongardens
 daltonGardens
-dalworthingtongardens
-dalworthingtonGardens
 dalycity
 dalyCity
 dalzell
@@ -5508,9 +5461,7 @@ dixHills
 dixieinn
 dixieInn
 dixmoor
-dixonlane-meadowcreek
 dixonlanemeadowcreek
-dixonLane-MeadowCreek
 dixonville
 dobbins
 dobbinsheights
@@ -5637,9 +5588,6 @@ downersgrove
 downersGrove
 downey
 downieville
-downieville-lawson-dumont
-downievillelawsondumont
-downieville-Lawson-Dumont
 downing
 downingtown
 downsville
@@ -5965,8 +5913,6 @@ eastgermantown
 eastGermantown
 eastgillespie
 eastGillespie
-eastglacierparkvillage
-eastGlacierParkVillage
 eastglenville
 eastGlenville
 eastglobe
@@ -6623,9 +6569,6 @@ emporia
 emporium
 emsworth
 encampment
-encantada-ranchito-elcalaboz
-encantadaranchitoelcalaboz
-encantada-Ranchito-ElCalaboz
 enchantedoaks
 enchantedOaks
 encinal
@@ -7062,9 +7005,6 @@ ferryville
 fertile
 fessenden
 festus
-fettershotsprings-aguacaliente
-fettershotspringsaguacaliente
-fettersHotSprings-AguaCaliente
 fiddletown
 fidelis
 fidelity
@@ -7262,9 +7202,7 @@ fondduLac
 fontana
 fontanadam
 fontanaDam
-fontana-on-genevalake
 fontanaongenevalake
-fontana-on-GenevaLake
 fontanelle
 fontanet
 fontenelle
@@ -7593,9 +7531,6 @@ fountainCity
 fountainebleau
 fountaingreen
 fountainGreen
-fountainhead-orchardhills
-fountainheadorchardhills
-fountainhead-OrchardHills
 fountainhill
 fountainHill
 fountainhills
@@ -7771,8 +7706,6 @@ friedensburg
 friend
 friendly
 friendship
-friendshipheightsvillage
-friendshipHeightsVillage
 friendsville
 friendswood
 frierson
@@ -9371,14 +9304,6 @@ heimdal
 helena
 helenaflats
 helenaFlats
-helenavalleynortheast
-helenaValleyNortheast
-helenavalleynorthwest
-helenaValleyNorthwest
-helenavalleysoutheast
-helenaValleySoutheast
-helenavalleywestcentral
-helenaValleyWestCentral
 helena-westhelena
 helenawesthelena
 helena-WestHelena
@@ -9842,10 +9767,6 @@ homerville
 homestead
 homesteadbase
 homesteadBase
-homesteadmeadowsnorth
-homesteadMeadowsNorth
-homesteadmeadowssouth
-homesteadMeadowsSouth
 homesteadvalley
 homesteadValley
 homestown
@@ -10137,8 +10058,6 @@ hustler
 hustonville
 hutchins
 hutchinson
-hutchinsonislandsouth
-hutchinsonIslandSouth
 hutsonville
 huttig
 hutton
@@ -10291,10 +10210,6 @@ internationalFalls
 invergroveheights
 inverGroveHeights
 inverness
-invernesshighlandsnorth
-invernessHighlandsNorth
-invernesshighlandssouth
-invernessHighlandsSouth
 inwood
 inyokern
 iowacity
@@ -10485,9 +10400,6 @@ jeffersonHeights
 jeffersonhills
 jeffersonHills
 jeffersontown
-jeffersonvalley-yorktown
-jeffersonvalleyyorktown
-jeffersonValley-Yorktown
 jeffersonville
 jeffreycity
 jeffreyCity
@@ -10987,8 +10899,6 @@ kinderhook
 kindred
 kingandqueen
 kingandQueen
-kingandqueencourthouse
-kingandQueenCourtHouse
 kingarthurpark
 kingArthurPark
 kingcity
@@ -11333,9 +11243,6 @@ lagunavista
 lagunaVista
 lagunawoods
 lagunaWoods
-lagunitas-forestknolls
-lagunitasforestknolls
-lagunitas-ForestKnolls
 lahabra
 laHabra
 lahabraheights
@@ -11362,8 +11269,6 @@ lajuntagardens
 laJuntaGardens
 lakealfred
 lakeAlfred
-lakealmanorcountryclub
-lakeAlmanorCountryClub
 lakealmanorpeninsula
 lakeAlmanorPeninsula
 lakealmanorwest
@@ -11574,9 +11479,7 @@ lakemadison
 lakeMadison
 lakemagdalene
 lakeMagdalene
-lakemarcel-stillwater
 lakemarcelstillwater
-lakeMarcel-Stillwater
 lakemary
 lakeMary
 lakemaryjane
@@ -11699,17 +11602,12 @@ lakeSherwood
 lakeshire
 lakeshore
 lakeShore
-lakeshoregardens-hiddenacres
-lakeshoregardenshiddenacres
-lakeshoreGardens-HiddenAcres
 lakeside
 lakesidecity
 lakesideCity
 lakesidepark
 lakesidePark
 lakesite
-lakesofthefourseasons
-lakesoftheFourSeasons
 lakesofthenorth
 lakesoftheNorth
 lakestation
@@ -12020,8 +11918,6 @@ laspalomas
 lasPalomas
 laspiedras
 lasPiedras
-lasquintasfronterizas
-lasQuintasFronterizas
 lassen
 lastrup
 lasvegas
@@ -12041,9 +11937,7 @@ lattimer
 lattimore
 lattingtown
 lauderdale
-lauderdale-by-the-sea
 lauderdalebythesea
-lauderdale-by-the-Sea
 lauderdalelakes
 lauderdaleLakes
 lauderhill
@@ -12566,8 +12460,6 @@ lochlomond
 lochLomond
 lochlynnheights
 lochLynnHeights
-lochmoorwaterwayestates
-lochmoorWaterwayEstates
 lochsheldrake
 lochSheldrake
 lochsloy
@@ -12800,8 +12692,6 @@ losprados
 losPrados
 losranchos
 losRanchos
-losranchosdealbuquerque
-losRanchosdeAlbuquerque
 lostant
 lostbridgevillage
 lostBridgeVillage
@@ -12905,9 +12795,7 @@ lubbock
 lubeck
 lublin
 lucama
-lucasvalley-marinwood
 lucasvalleymarinwood
-lucasValley-Marinwood
 lucasville
 lucedale
 lucerne
@@ -13157,9 +13045,6 @@ mancos
 mandan
 mandaree
 manderson
-manderson-whitehorsecreek
-mandersonwhitehorsecreek
-manderson-WhiteHorseCreek
 mandeville
 manele
 mangham
@@ -13181,9 +13066,6 @@ manisteeLake
 manistique
 manito
 manitou
-manitoubeach-devilslake
-manitoubeachdevilslake
-manitouBeach-DevilsLake
 manitousprings
 manitouSprings
 manitowoc
@@ -13243,9 +13125,6 @@ maplegrove
 mapleGrove
 mapleheights
 mapleHeights
-mapleheights-lakedesire
-mapleheightslakedesire
-mapleHeights-LakeDesire
 maplehill
 mapleHill
 maplelake
@@ -13504,9 +13383,6 @@ mathis
 mathiston
 matinecock
 matlacha
-matlachaisles-matlachashores
-matlachaislesmatlachashores
-matlachaIsles-MatlachaShores
 matlock
 matoaca
 matoaka
@@ -14261,8 +14137,6 @@ missionWoods
 mississippi
 mississippistate
 mississippiState
-mississippivalleystateuniversity
-mississippiValleyStateUniversity
 missoula
 missouri
 missouricity
@@ -15038,9 +14912,7 @@ nashwauk
 nassau
 nassaubay
 nassauBay
-nassauvillage-ratliff
 nassauvillageratliff
-nassauVillage-Ratliff
 nassawadox
 natalbany
 natalia
@@ -15645,8 +15517,6 @@ niotaze
 nipinnawasee
 nipomo
 nisland
-nisquallyindiancommunity
-nisquallyIndianCommunity
 nissequogue
 nisswa
 nittany
@@ -16506,11 +16376,7 @@ oliverSprings
 olivet
 olivette
 olivia
-olivialopezdegutierrez
-oliviaLopezdeGutierrez
-oljato-monumentvalley
 oljatomonumentvalley
-oljato-MonumentValley
 olmito
 olmitoandolmito
 olmitoandOlmito
@@ -16693,9 +16559,6 @@ osterdock
 ostrander
 oswego
 othello
-otisorchards-eastfarms
-otisorchardseastfarms
-otisOrchards-EastFarms
 otisville
 otsego
 ottawa
@@ -16982,8 +16845,6 @@ parcelasnuevas
 parcelasNuevas
 parcelaspenuelas
 parcelasPenuelas
-parcelasviejasborinquen
-parcelasViejasBorinquen
 parchment
 parcoal
 pardeesville
@@ -17078,8 +16939,6 @@ pascola
 paskenta
 pasquotank
 passaic
-passamaquoddypleasantpoint
-passamaquoddyPleasantPoint
 passapatanzy
 passchristian
 passChristian
@@ -17807,8 +17666,6 @@ pocatello
 pocola
 pocomokecity
 pocomokeCity
-poconomountainlakeestates
-poconoMountainLakeEstates
 poconopines
 poconoPines
 poconoranchlands
@@ -17999,8 +17856,6 @@ portersville
 porterville
 portewen
 portEwen
-portgambletribalcommunity
-portGambleTribalCommunity
 portgibson
 portGibson
 portgraham
@@ -18239,8 +18094,6 @@ prescott
 prescottvalley
 prescottValley
 presho
-presidentiallakesestates
-presidentialLakesEstates
 presidio
 presqueisle
 presqueIsle
@@ -18353,8 +18206,6 @@ pueblitos
 pueblo
 pueblonuevo
 puebloNuevo
-puebloofsandiavillage
-puebloofSandiaVillage
 pueblopintado
 puebloPintado
 pueblowest
@@ -19950,8 +19801,6 @@ sandiapark
 sandiaPark
 sandiego
 sanDiego
-sandiegocountryestates
-sanDiegoCountryEstates
 sandimas
 sanDimas
 sandlake
@@ -19974,9 +19823,6 @@ sandwich
 sandycreek
 sandyCreek
 sandyfield
-sandyhollow-escondidas
-sandyhollowescondidas
-sandyHollow-Escondidas
 sandyhook
 sandyHook
 sandylevel
@@ -20728,8 +20574,6 @@ shipbottom
 shipBottom
 shipman
 shippensburg
-shippensburguniversity
-shippensburgUniversity
 shippenville
 shippingport
 shiprock
@@ -20761,9 +20605,6 @@ shorewoodforest
 shorewoodForest
 shorewoodhills
 shorewoodHills
-shorewood-towerhills-harbert
-shorewoodtowerhillsharbert
-shorewood-TowerHills-Harbert
 shorter
 shorthills
 shortHills
@@ -20992,8 +20833,6 @@ slidell
 slinger
 slipperyrock
 slipperyRock
-slipperyrockuniversity
-slipperyRockUniversity
 sloatsburg
 slocomb
 slovan
@@ -21451,8 +21290,6 @@ southShaftsbury
 southshore
 southShore
 southside
-southsidechesconessex
-southsideChesconessex
 southsideplace
 southsidePlace
 southsiouxcity
@@ -21596,8 +21433,6 @@ sportsmenacres
 sportsmenAcres
 spotswood
 spotsylvania
-spotsylvaniacourthouse
-spotsylvaniaCourthouse
 spottsville
 sprague
 spragueville
@@ -21675,8 +21510,6 @@ squawlake
 squawLake
 squawvalley
 squawValley
-squirrelmountainvalley
-squirrelMountainValley
 staatsburg
 staceystreet
 staceyStreet
@@ -22763,9 +22596,6 @@ tallulahFalls
 talmage
 taloga
 tamaha
-tamalpais-homesteadvalley
-tamalpaishomesteadvalley
-tamalpais-HomesteadValley
 tamaqua
 tamarac
 tamarack
@@ -22786,8 +22616,6 @@ tangier
 tangipahoa
 tanglewilde
 tannersville
-tanquecitossouthacres
-tanquecitosSouthAcres
 tanqueverde
 tanqueVerde
 taospueblo
@@ -23018,8 +22846,6 @@ thesilos
 theSilos
 thevillage
 theVillage
-thevillageofindianhill
-theVillageofIndianHill
 thevillages
 theVillages
 thewoodlands
@@ -23114,8 +22940,6 @@ tierrabonita
 tierraBonita
 tierragrande
 tierraGrande
-tierrasnuevasponiente
-tierrasNuevasPoniente
 tierraverde
 tierraVerde
 tieton
@@ -23347,9 +23171,6 @@ treasureisland
 treasureIsland
 treasurelake
 treasureLake
-trego-rohrersvillestation
-tregorohrersvillestation
-trego-RohrersvilleStation
 tremont
 tremontcity
 tremontCity
@@ -23601,9 +23422,7 @@ unalakleet
 unalaska
 uncertain
 underwood
-underwood-petersville
 underwoodpetersville
-underwood-Petersville
 unicoi
 unionbeach
 unionBeach
@@ -23625,9 +23444,7 @@ unionhall
 unionHall
 unionhill
 unionHill
-unionhill-noveltyhill
 unionhillnoveltyhill
-unionHill-NoveltyHill
 unionlevel
 unionLevel
 unionpark
@@ -23661,11 +23478,6 @@ universitygardens
 universityGardens
 universityheights
 universityHeights
-universityofcalifornia-davis
-universityofcaliforniadavis
-universityofCalifornia-Davis
-universityofpittsburghjohnstown
-universityofPittsburghJohnstown
 universityofvirginia
 universityofVirginia
 universitypark
@@ -23973,23 +23785,16 @@ vieraeast
 vieraEast
 vierawest
 vieraWest
-viewpark-windsorhills
 viewparkwindsorhills
-viewPark-WindsorHills
 viking
 villadelsol
 villadelSol
 villagegreen
 villageGreen
-villagegreen-greenridge
-villagegreengreenridge
-villageGreen-GreenRidge
 villageofclarkston
 villageofClarkston
 villageoffourseasons
 villageofFourSeasons
-villageofgrossepointeshores
-villageofGrossePointeShores
 villageofoakcreek
 villageofOakCreek
 villageofthebranch
@@ -24205,8 +24010,6 @@ wallaWallaEast
 wallburg
 walledlake
 walledLake
-wallenpaupacklakeestates
-wallenpaupackLakeEstates
 waller
 wallingford
 wallingfordcenter
@@ -24647,9 +24450,6 @@ westchicago
 westChicago
 westcity
 westCity
-westclarkston-highland
-westclarkstonhighland
-westClarkston-Highland
 westcliffe
 westcollegecorner
 westCollegeCorner
@@ -25008,9 +24808,6 @@ westWaynesburg
 westwego
 westwendover
 westWendover
-westwhittier-losnietos
-westwhittierlosnietos
-westWhittier-LosNietos
 westwildwood
 westWildwood
 westwinfield
@@ -25229,9 +25026,7 @@ wichita
 wichitafalls
 wichitaFalls
 wickenburg
-wickerhammanor-fisher
 wickerhammanorfisher
-wickerhamManor-Fisher
 wickes
 wickett
 wickliffe
