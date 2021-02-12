@@ -41,7 +41,7 @@ This details my password cracking setup with John the Ripper. Based on the facts
 
 This means that if I use names, places, and dictionary words alone or with numbers + 4, 6, and 8 digit passwords, I can (theoretically) crack 57.3% of all passwords in a dump. 
 
-Sources:
+**Sources:**
 1. https://www.troyhunt.com/brief-sony-password-analysis/ (2011)
 2. https://duo.com/blog/brief-analysis-of-the-gawker-password-dump (2010)
 3. https://digi.ninja/projects/pipal.php (at least after 2012)
@@ -59,14 +59,14 @@ Sources:
 ### Specialized Wordlists
 In all of these wordlists, the personalDictionary rules in johnrules.rul were applied. Only passwords between 6 and 10 characters long are included. Any words or names that also appear in dictionary.txt were removed from these wordlists.
 
-* starTrek.txt (??? MB)
-    * This wordlist contains 350 commonly used words, major characters, nicknames, slang, etc.
-* starWars.txt (??? MB)
-    * This wordlist contains 330 major characters, creatures, alien races, worlds, objects, slang, quotes, vehicles, weapons, etc.
-* harryPotter.txt (??? MB)
-    * This wordlist contains 370 major characters, spells, creatures, book titles, places, items, quidditch positions, slang, etc.
-* usaCanLocations.txt (??? MB)
-    * This wordlist contains 13,000 cities, counties, provinces, and states of the United States and Canada.
+* starTrek.txt (31.2 MB)
+    * This wordlist contains 350 commonly used words, major characters, nicknames, slang, etc. as the base words.
+* starWars.txt (36.1 MB)
+    * This wordlist contains 330 major characters, creatures, alien races, worlds, objects, slang, quotes, vehicles, weapons, etc. as the base words.
+* harryPotter.txt (29.8 MB)
+    * This wordlist contains 370 major characters, spells, creatures, book titles, places, items, quidditch positions, slang, etc. as the base words.
+* usaCanLocations.txt (706 MB)
+    * This wordlist contains 13,000 cities, counties, provinces, and states of the United States and Canada as the base words.
 * internationalLocations.txt (https://simplemaps.com/data/world-cities + countries + islands + etc.)
 * doctorWho.txt
 * anime.txt
@@ -99,31 +99,30 @@ John the Ripper can normally go through a 10 GB wordlist in a minute* while crac
 5. **Optional** - If possible, use a specialized wordlist that matches the target
 6. Incremental ASCII
 
-**All times are based off of my personal computer's specs. I have an i7-10510U processor (8 processing threads, 1.80 GHz base processing speed), 12 GB of RAM, and a Solid State Drive. These times were also computed with no/few other programs running.*
+**Based off of my personal computer's specs. I have an i7-10510U processor (8 processing threads, 1.80 GHz base processing speed), 12 GB of RAM, and a Solid State Drive. These times were also computed with no/few other programs running.*
 
 ## How to Compile Wordlists
-### General Wordlists
 * Make sure John the Ripper and perl are installed
 * Edit the john.conf file and insert the rules found in johnrules.rul
+
+### General Wordlists
 * To produce crackStation.txt
     * Download crackStation.txt from [crackstation.net](https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm)
     * Depending on download and file read/write speeds, this can take approximately 20 minutes
 * To produce dictionaryRules.txt
     * Using dictionary.txt, run the command `john --wordlist=dictionary.txt --rules=personalDictionary --stdout > dictionaryRules1.txt`
-    * To eliminate all passwords over 10 and under 6 characters, run the command `perl -lne 'length()<11 && length()>5 && print' dictionaryRules1.txt > dictionaryRules.txt; rm dictionaryRules1.txt` (92% of passwords are between 6-10 characters in length). This cuts down the wordlist by 9 GB.
+    * To eliminate all passwords over 10 and under 6 characters, run the command `perl -lne 'length()<11 && length()>5 && print' dictionaryRules1.txt > dictionaryRules.txt; rm dictionaryRules1.txt`. This cuts down the wordlist by 9 GB.
     * This takes around 40 minutes.
 
 ### Specialized Wordlists
-* To produce starTrek.txt, run these commands. This takes around 5 minutes. 
-    * `john --wordlist=starTrekBase.txt --rules=personalDictionary --stdout > st1; john --wordlist=starTrekBase.txt --rules=personalSymbols --stdout > st2; cat starTrekBase.txt st1 st2 > starTrek1.txt; rm st1 st2; perl -lne 'length()>5 && length()<21 && print' starTrek1.txt > starTrek2.txt; rm starTrek1.txt; sort starTrek2.txt > st1; uniq st1 > starTrek.txt; rm st1 starTrek2.txt;`
-* To produce starWars.txt, run these commands. This takes around 5 minutes.
-    * `john --wordlist=starWarsBase.txt --rules=personalDictionary --stdout > sw1; john --wordlist=starWarsBase.txt --rules=personalSymbols --stdout > sw2; cat starWarsBase.txt sw1 sw2 > starWars1.txt; rm sw1 sw2; perl -lne 'length()>5 && length()<21 && print' starWars1.txt > starWars2.txt; rm starWars1.txt; sort starWars2.txt > sw1; uniq sw1 > starWars.txt; rm sw1 starWars2.txt;`
-* To produce harryPotter.txt, run these commands. This takes around ?? minutes.
-    * `john --wordlist=harryPotterBase.txt --rules=personalDictionary --stdout > hp1; john --wordlist=harryPotterBase.txt --rules=personalSymbols --stdout > hp2; cat harryPotterBase.txt hp1 hp2 > harryPotter1.txt; rm hp1 hp2; perl -lne 'length()>5 && length()<21 && print' harryPotter1.txt > harryPotter2.txt; rm harryPotter1.txt; sort harryPotter2.txt > hp1; uniq hp1 > harryPotter.txt; rm hp1 harryPotter2.txt;`
-* To produce usLocations.txt, run these commands. This takes around ?? minutes.
-    * `john --wordlist=usLocationsBase.txt --rules=personalDictionary --stdout > usl1; john --wordlist=usLocationsBase.txt --rules=personalSymbols --stdout > usl2; cat usLocationsBase.txt usl1 usl2 > usLocations1.txt; rm usl1 usl2; perl -lne 'length()>5 && length()<21 && print' usLocations1.txt > usLocations2.txt; rm usLocations1.txt; sort usLocations2.txt > usl1; uniq usl1 > usLocations.txt; rm usl1 usLocations2.txt;`
-* To produce canadianLocations.txt, run these commands. This takes around ?? minutes.
-    * `john --wordlist=canadianLocationsBase.txt --rules=personalDictionary --stdout > cl1; john --wordlist=canadianLocationsBase.txt --rules=personalSymbols --stdout > cl2; cat canadianLocationsBase.txt cl1 cl2 > canadianLocations1.txt; rm cl1 cl2; perl -lne 'length()>5 && length()<21 && print' canadianLocations1.txt > canadianLocations2.txt; rm canadianLocations1.txt; sort canadianLocations2.txt > cl1; uniq cl1 > canadianLocations.txt; rm cl1 canadianLocations2.txt;`
+* To produce starTrek.txt, run these commands. This should take only a few seconds.
+    * `john --wordlist=wordlistBases/starTrekBase.txt --rules=personalDictionary --stdout > starTrek1.txt; perl -lne 'length()>5 && length()<11 && print' starTrek1.txt > starTrek2.txt; sort starTrek2.txt > st1; uniq st1 > starTrek.txt; rm st1 starTrek1.txt starTrek2.txt;`
+* To produce starWars.txt, run these commands. This should take only a few seconds.
+    * `john --wordlist=wordlistBases/starWarsBase.txt --rules=personalDictionary --stdout > starWars1.txt; perl -lne 'length()>5 && length()<11 && print' starWars1.txt > starWars2.txt; sort starWars2.txt > sw1; uniq sw1 > starWars.txt; rm sw1 starWars1.txt starWars2.txt;`
+* To produce harryPotter.txt, run these commands. This should take only a few seconds.
+    * `john --wordlist=wordlistBases/harryPotterBase.txt --rules=personalDictionary --stdout > harryPotter1.txt; perl -lne 'length()>5 && length()<11 && print' harryPotter1.txt > harryPotter2.txt; sort harryPotter2.txt > hp1; uniq hp1 > harryPotter.txt; rm hp1 harryPotter1.txt harryPotter2.txt;`
+* To produce usaCanLocations.txt, run these commands. This should take only a few minutes.
+    * `john --wordlist=wordlistBases/usaCanLocationsBase.txt --rules=personalDictionary --stdout > usaCanLocations1.txt; perl -lne 'length()>5 && length()<11 && print' usaCanLocations1.txt > usaCanLocations2.txt; sort usaCanLocations2.txt > uc1; uniq uc1 > usaCanLocations.txt; rm uc1 usaCanLocations1.txt usaCanLocations2.txt;`
 
 ## Individualized Wordlists
 The point of list of details is to find words that aren't on my wordlist, or uncommon words/phrases
