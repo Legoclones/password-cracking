@@ -1,11 +1,13 @@
 Todo:
 - Create all the specialized wordlists
 - Create details program
+- Search through https://github.com/topics/wordlists and wordlist, password, and password-cracking
 
 # Password Cracking Setup README
-This details my password cracking setup with John the Ripper.
+This details my password cracking setup with John the Ripper. Based on the facts listed below, all passwords are between 6 and 10 characters and there are no symbols in these wordlists. 
 
 ## Contents
+* [Password Facts](#password-facts)
 * [Wordlists](#wordlists)
     * [General Wordlists](#general-wordlists)
     * [Specialized Wordlists](#specialized-wordlists)
@@ -15,34 +17,56 @@ This details my password cracking setup with John the Ripper.
     * [Specialized Wordlists](#specialized-wordlists-1)
 * [Individualized Wordlists](#individualized-wordlists)
 
+## Password Facts
+* Most common length - between 6 and 10 (91%)
+    * Adding 5 characters give you an extra 3-5%
+* One or two character sets - 95%
+* Contains a non-alphanumeric character - 2%
+* Derived from a name - 14%
+    * Name alone - 7.7%
+    * Name + numbers - 5.9%
+* Derived from a place - 8%
+    * Place alone - 5.1%
+    * Place + numbers - 2.7%
+* Derived from a dictionary word - 25%
+    * Word alone - 16%
+    * Word + numbers - 8.3%
+* Just numbers - 14%
+    * 6 digits - 6.7%
+    * 4 digits - 1.1%
+    * 8 digits - 3.8%
+* Derived from double words, phrases, email addresses, the keyboard, and site-related words - 7.7%
+* A majority of the remaining 31% of passwords relate to pop culture
+* 1-2 digits appended - 30%
+
+This means that if I use names, places, and dictionary words alone or with numbers + 4, 6, and 8 digit passwords, I can (theoretically) crack 57.3% of all passwords in a dump. 
+
+Sources:
+1. https://www.troyhunt.com/brief-sony-password-analysis/ (2011)
+2. https://duo.com/blog/brief-analysis-of-the-gawker-password-dump (2010)
+3. https://digi.ninja/projects/pipal.php (at least after 2012)
+4. https://null-byte.wonderhowto.com/how-to/use-leaked-password-databases-create-brute-force-wordlists-0184006/ (2018)
+
 ## Wordlists
 ### General Wordlists
 * crackStation.txt (14.6 GB)
     * This is a list from [crackstation.net](https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm) that contains every wordlist, dictionary, and password database leak that the creator could find, along with every word in Wikipedia from 2010 and books from Project Gutenberg.
-* fewCharacters.txt (43.6 GB)
-    * This contains every possible password from 1-5 characters long, all symbols included. 
 * dictionary.txt (278 KB)
     * This is a wordlist I've compiled that has the 39,000 most common words, animals, names, colors, elements, foods, jobs, body parts, and cities. This isn't meant to be exhaustive, but rather have words that the general public would most likely use in a password. All words over a length of 10 were removed and the wordlist has no symbols or uppercase characters.
 * dictionaryRules.txt (9.27 GB)
-    * This wordlist is dictionary.txt, but modified according to johnrules.rul's personalDictionary rule list. All passwords are between 6 and 10 characters long. Since less than 4% of passwords normally have symbols, no symbols are included in these rules. 
-* doubleDictionary.txt (18.5 GB)
-    * This wordlist has each entry in dictionary.txt concatenated with every other entry in dictionary.txt (ie, mycat mybed myharp ...). All passwords are between 6 and 16 characters long and the wordlist has no symbols or uppercase characters.
-* doubleDictionaryRules.txt (388 GB)
-    * This wordlist is doubleDictionary.txt, but modified according to johnrules.rul's personalDoubleDictionary rule list. All passwords over a length of 16 were removed.
+    * This wordlist is dictionary.txt, but modified according to johnrules.rul's personalDictionary rule list. All passwords are between 6 and 10 characters long.
 
 ### Specialized Wordlists
-In all of these wordlists, the personalDictionary and personalSymbols rules in johnrules.rul were applied. Only passwords over 5 and under 21 characters long are included.
+In all of these wordlists, the personalDictionary rules in johnrules.rul were applied. Only passwords between 6 and 10 characters long are included. Any words or names that also appear in dictionary.txt were removed from these wordlists.
 
 * starTrek.txt (??? MB)
-    * This wordlist contains 1,100 commonly used words, major characters, nicknames, slang, etc.
+    * This wordlist contains 350 commonly used words, major characters, nicknames, slang, etc.
 * starWars.txt (??? MB)
-    * This wordlist contains 780 major characters, creatures, alien races, worlds, objects, slang, quotes, vehicles, weapons, etc.
+    * This wordlist contains 330 major characters, creatures, alien races, worlds, objects, slang, quotes, vehicles, weapons, etc.
 * harryPotter.txt (??? MB)
-    * This wordlist contains 1,000 major characters, spells, creatures, book titles, places, items, quidditch positions, slang, etc.
-* usLocations.txt (??? MB)
-    * This wordlist contains 25,000 cities, counties, and states of the United States of America.
-* canadianLocations.txt (??? MB)
-    * This wordlist contains 3,000 cities and provinces of Canada.
+    * This wordlist contains 370 major characters, spells, creatures, book titles, places, items, quidditch positions, slang, etc.
+* usaCanLocations.txt (??? MB)
+    * This wordlist contains 13,000 cities, counties, provinces, and states of the United States and Canada.
 * internationalLocations.txt (https://simplemaps.com/data/world-cities + countries + islands + etc.)
 * doctorWho.txt
 * anime.txt
@@ -60,57 +84,34 @@ In all of these wordlists, the personalDictionary and personalSymbols rules in j
 * gameOfThrones.txt
 * memes.txt
 * celebrities.txt
-* popularplaces.txt (national parks, landmarks, etc.)
+* popularplaces.txt (national parks, landmarks, amusement parks, stores, etc.)
 * Other languages
 * Birth country
 
 ## Applying Password Cracking Setup
-John the Ripper can normally go through a 10 GB wordlist in a minute*.
+John the Ripper can normally go through a 10 GB wordlist in a minute* while cracking MD5 hashes.
 
-1. Use the crackStation.txt wordlist with no rules (~1.5 minutes)
+1. Use the crackStation.txt wordlist
     * *Note - this should be able to capture a good chunk of the passwords*
-2. Use the dictionary.txt wordlist with no rules (~1 second)
-3. Use the dictionaryRules.txt wordlist with no rules (~1 minute)
-    * *Note - this wordlist contains no symbols, as over 96% of passwords normally don't have any symbols*
-4. Use the doubleDictionary.txt wordlist with no rules (~2 minutes)
-5. Use the fewCharacters.txt wordlist with no rules (~4 minutes)
-    * *Note - this wordlist contains all possible passwords between 1-5 characters*
-6. Use the doubleDictionaryRules.txt wordlist with no rules (~40 minutes)
-    * *Note - this only uses a couple of rules, any more would take up too much storage space. Step 9 is for the remaining optional rules.*
-7. **Optional** - If possible, use an individualized wordlist using the format above
-8. **Optional** - If possible, use a specialized wordlist that matches the target
-9. Other options:
-    * dictionary.txt with personalSymbols rule list
-    * doubleDictionary.txt with personalSymbols, personalShortOne, or personalShortTwo rule lists
-    * doubleDictionary.txt with words separated by _ or .
-    * Incremental ASCII starting with 6 characters
+2. Use the dictionary.txt wordlist
+3. Use the dictionaryRules.txt wordlist
+4. **Optional** - If possible, use an individualized wordlist using the format above
+5. **Optional** - If possible, use a specialized wordlist that matches the target
+6. Incremental ASCII
 
 **All times are based off of my personal computer's specs. I have an i7-10510U processor (8 processing threads, 1.80 GHz base processing speed), 12 GB of RAM, and a Solid State Drive. These times were also computed with no/few other programs running.*
 
 ## How to Compile Wordlists
 ### General Wordlists
-* Make sure John the Ripper, perl, and crunch are installed
+* Make sure John the Ripper and perl are installed
 * Edit the john.conf file and insert the rules found in johnrules.rul
-* Make an exact copy of dictionary.txt and name it dictionary2.txt
 * To produce crackStation.txt
     * Download crackStation.txt from [crackstation.net](https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm)
     * Depending on download and file read/write speeds, this can take approximately 20 minutes
-* To produce fewCharacters.txt
-    * Using crunch from the command line, run the command `crunch 1 5 -f charset.lst all -o fewCharacters.txt`
-    * This takes around 30 minutes
 * To produce dictionaryRules.txt
     * Using dictionary.txt, run the command `john --wordlist=dictionary.txt --rules=personalDictionary --stdout > dictionaryRules1.txt`
     * To eliminate all passwords over 10 and under 6 characters, run the command `perl -lne 'length()<11 && length()>5 && print' dictionaryRules1.txt > dictionaryRules.txt; rm dictionaryRules1.txt` (92% of passwords are between 6-10 characters in length). This cuts down the wordlist by 9 GB.
     * This takes around 40 minutes.
-* To produce doubleDictionary.txt
-    * Note - This .cpp file uses both dictionary.txt and dictionary2.txt files, so make sure they are in the same directory
-    * Compile and run the doubleDictionary.cpp file to produce the doubleDictionary.txt wordlist
-    * To eliminate all passwords over 16 and under 6 characters, run the command `perl -lne 'length()<17 && length()>5 && print' doubleDictionary.txt > doubleDictionary2.txt; rm doubleDictionary.txt; mv doubleDictionary2.txt doubleDictionary.txt`. This cuts down the wordlist by ~1 GB.
-    * This takes around 2 hours.
-* To produce doubleDictionaryRules.txt
-    * Using doubleDictionary.txt, run the command `john --wordlist=doubleDictionary.txt --rules=personalDoubleDictionary --stdout > doubleDictionaryRules1.txt`
-    * To eliminate all passwords over 16 characters, run the command `perl -lne 'length()<17 && print' doubleDictionaryRules1.txt > doubleDictionaryRules.txt; rm doubleDictionaryRules1.txt`. This cuts down the wordlist by 29 GB.
-    * This takes around 20 hours.
 
 ### Specialized Wordlists
 * To produce starTrek.txt, run these commands. This takes around 5 minutes. 
@@ -178,4 +179,5 @@ Children last names:
 Children nicknames:
 Children birthdates:
 Pet names:
+Old/current usernames:
 Other info:
