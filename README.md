@@ -1,7 +1,8 @@
 Todo:
 - Create all the specialized wordlists
 - Create details program
-- Search through https://github.com/topics/wordlists and wordlist, password, and password-cracking
+- Search through https://github.com/topics/wordlist
+- Run `comm` with all the wordlist bases
 
 # Password Cracking Setup README
 This details my password cracking setup with John the Ripper. Based on the facts listed below, all passwords are between 6 and 10 characters and there are no symbols in these wordlists. 
@@ -51,25 +52,28 @@ This means that if I use names, places, and dictionary words alone or with numbe
 ### General Wordlists
 * crackStation.txt (14.6 GB)
     * This is a list from [crackstation.net](https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm) that contains every wordlist, dictionary, and password database leak that the creator could find, along with every word in Wikipedia from 2010 and books from Project Gutenberg.
-* dictionary.txt (278 KB)
-    * This is a wordlist I've compiled that has the 39,000 most common words, animals, names, colors, elements, foods, jobs, body parts, and cities. This isn't meant to be exhaustive, but rather have words that the general public would most likely use in a password. All words over a length of 10 were removed and the wordlist has no symbols or uppercase characters.
-* dictionaryRules.txt (9.27 GB)
+* dictionary.txt (??? KB)
+    * This is a wordlist I've compiled that has the ??,000 most common words, animals, names, colors, elements, foods, jobs, body parts, and cities. This isn't meant to be exhaustive, but rather have words that the general public would most likely use in a password. All words over a length of 10 were removed and the wordlist has no symbols or uppercase characters.
+* dictionaryRules.txt (??? GB)
     * This wordlist is dictionary.txt, but modified according to johnrules.rul's personalDictionary rule list. All passwords are between 6 and 10 characters long.
 
 ### Specialized Wordlists
 In all of these wordlists, the personalDictionary rules in johnrules.rul were applied. Only passwords between 6 and 10 characters long are included. Any words or names that also appear in dictionary.txt were removed from these wordlists.
 
-* starTrek.txt (31.2 MB)
-    * This wordlist contains 350 commonly used words, major characters, nicknames, slang, etc. as the base words.
-* starWars.txt (36.1 MB)
-    * This wordlist contains 330 major characters, creatures, alien races, worlds, objects, slang, quotes, vehicles, weapons, etc. as the base words.
-* harryPotter.txt (29.8 MB)
-    * This wordlist contains 370 major characters, spells, creatures, book titles, places, items, quidditch positions, slang, etc. as the base words.
+* starTrek.txt (??? MB)
+    * This wordlist contains 400 commonly used words, major characters, nicknames, slang, etc. as the base words.
+* starWars.txt (??? MB)
+    * This wordlist contains 400 major characters, creatures, alien races, worlds, objects, slang, quotes, vehicles, weapons, etc. as the base words.
+* harryPotter.txt (??? MB)
+    * This wordlist contains 420 major characters, spells, creatures, book titles, places, items, quidditch positions, slang, etc. as the base words.
 * usaCanLocations.txt (706 MB)
     * This wordlist contains 13,000 cities, counties, provinces, and states of the United States and Canada as the base words.
+* gameOfThrones.txt (??? MB)
+    * This wordlist contains
 * internationalLocations.txt (https://simplemaps.com/data/world-cities + countries + islands + etc.)
 * doctorWho.txt
 * anime.txt
+    * https://github.com/ryuuganime/animanga-wordlist
 * spanish.txt
 * lds.txt
 * music.txt
@@ -81,12 +85,29 @@ In all of these wordlists, the personalDictionary rules in johnrules.rul were ap
 * boardGames.txt
 * history.txt
 * lordOfTheRings.txt
-* gameOfThrones.txt
 * memes.txt
 * celebrities.txt
+    * https://github.com/Cheroxx/custom-wordlists
 * popularplaces.txt (national parks, landmarks, amusement parks, stores, etc.)
+* techTerms.txt
+    * https://github.com/hypn/custom-wordlists/blob/master/dev-terms.txt
+    * https://github.com/wirzka/wordlists/tree/master/dirb
+    * https://github.com/wirzka/wordlists/tree/master/metaploit
+    * https://github.com/kkrypt0nn/Wordlists
 * Other languages
+    * https://github.com/xajkep/wordlists/tree/master/dictionaries
+    * https://github.com/miglen/bulgarian-wordlists
+    * https://github.com/baclv/vietnamese-password-dicts
+    * https://github.com/sharsi1/russkiwlst
+    * https://github.com/hypn/custom-wordlists
+    * https://github.com/1337z/wordlists
+    * https://github.com/clem9669/wordlists
+    * https://github.com/Blkzer0/Wordlists
+    * https://github.com/napolux/paroleitaliane
+    * https://github.com/kkrypt0nn/Wordlists
+    * https://github.com/serapath/bip39wordlist
 * Birth country
+* Most common dog names - https://github.com/Cheroxx/custom-wordlists/blob/master/pets
 
 ## Applying Password Cracking Setup
 John the Ripper can normally go through a 10 GB wordlist in a minute* while cracking MD5 hashes.
