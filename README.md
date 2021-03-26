@@ -3,6 +3,7 @@ Todo:
 - Create details program
 - Search through https://github.com/topics/wordlist
 - Run `comm` with all the wordlist bases
+- Add base words to dictionary (https://null-byte.wonderhowto.com/how-to/use-leaked-password-databases-create-brute-force-wordlists-0184006/)
 
 # Password Cracking Setup README
 This details my password cracking setup with John the Ripper. Based on the facts listed below, all passwords are between 6 and 10 characters and there are no symbols in these wordlists. 
