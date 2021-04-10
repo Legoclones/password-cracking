@@ -15,7 +15,6 @@ antares
 antimatter
 artificial
 ashtyler
-ashTyler
 assignment
 assistance
 astern
@@ -41,7 +40,6 @@ bluejay4
 boimler
 bookworm
 borgqueen
-borgQueen
 briarpatch
 brigadier
 brownie
@@ -57,7 +55,6 @@ changeling
 chaplain
 chekov
 chrisrios
-chrisRios
 cloaking
 colonel
 colonists
@@ -81,7 +78,6 @@ darsek
 darseks
 davinci
 deannatroi
-deannaTroi
 debris
 decius
 defiant
@@ -103,7 +99,6 @@ droner
 earthtype
 eelbird
 elimgarak
-elimGarak
 emissary
 enabran
 energize
@@ -114,7 +109,6 @@ evacuation
 evasive
 experiment
 ezridax
-ezriDax
 farpoint
 federation
 ferengi
@@ -133,7 +127,6 @@ galileo
 ganglia
 gardane
 genrhys
-genRhys
 geordi
 georgiou
 godoflies
@@ -144,23 +137,18 @@ hailing
 halkan
 harcourt
 harrykim
-harryKim
 harrymudd
-harryMudd
 helical
 hikaru
 hikarusulu
-hikaruSulu
 holodeck
 holosuite
 homeworld
 honorable
 hoshisato
-hoshiSato
 hostile
 houdini
 hughculber
-hughCulber
 humanoid
 hypospray
 iceman
@@ -171,28 +159,20 @@ infirmary
 intercept
 jadzia
 jadziadax
-jadziaDax
 jakeo
 jakesisko
-jakeSisko
 jalculluh
-jalCulluh
 jameskirk
-jamesKirk
 jamestkirk
-jamesTKirk
 janeway
 janicerand
-janiceRand
 jannar
 jeanluc
 jemhadar
 jetreno
-jetReno
 jhayes
 jmcolt
 josastyler
-josasTyler
 jurati
 kahless
 kashimuro
@@ -205,7 +185,6 @@ kelpiens
 khitomer
 kimara
 kiranerys
-kiraNerys
 klaxon
 klingon
 klingons
@@ -216,10 +195,8 @@ latinum
 lieutenant
 lifeform
 linalas
-liNalas
 lobekins
 lonsuder
-lonSuder
 lowerdecks
 loyalty
 lrell
@@ -243,9 +220,7 @@ mollybrien
 montgomery
 moogie
 morapol
-moraPol
 mrhomn
-mrHomn
 musiker
 mycelial
 mycelium
@@ -261,7 +236,6 @@ nozawa
 number1
 numberone
 nyotauhura
-nyotaUhura
 obachan
 obsidian
 occupation
@@ -272,7 +246,6 @@ olemiss
 olmiss
 onscreen
 opakasulan
-opakaSulan
 operations
 ophiucus
 outpost
@@ -280,7 +253,6 @@ outworlder
 overload
 override
 owenparis
-owenParis
 owosekun
 parameters
 parsec
@@ -308,7 +280,6 @@ rendezvous
 replicator
 resistance
 rolaren
-roLaren
 romulan
 romulans
 romulus
@@ -317,7 +288,6 @@ rozhenko
 runabout
 saavik
 sarahsisko
-sarahSisko
 sawbones
 scarface
 scientific
@@ -337,9 +307,7 @@ simulation
 sirencalls
 skyship
 sojiasha
-sojiAsha
 sonyagomez
-sonyaGomez
 spacewhale
 spican
 stamets
@@ -360,11 +328,9 @@ symbiont
 tachyon
 tactical
 talceles
-talCeles
 tardigrade
 tartigrade
 tashayar
-tashaYar
 technology
 telepathic
 tellarite
@@ -372,7 +338,6 @@ tellun
 thebarrens
 thecleaner
 thecolony
-theDoctor
 thelev
 theslider
 thevoid
@@ -381,9 +346,7 @@ thylek
 tinman
 tomalak
 tomparis
-tomParis
 toraziyal
-toraZiyal
 torpedo
 torpedoes
 traitor
@@ -399,7 +362,6 @@ warpdrive
 warship
 weyoun
 winnadami
-winnAdami
 wormhole
 yurium
 zekkie
