@@ -2,16 +2,10 @@ Todo:
 - Create all the specialized wordlists
 - Create details program
 - Search through https://github.com/topics/wordlist
-- Run `comm` with all the wordlist bases
-- Add base words to dictionary (https://null-byte.wonderhowto.com/how-to/use-leaked-password-databases-create-brute-force-wordlists-0184006/)
-- Make basic dictionary
 - Better test times
-- Remove symbols and characters from all wordlists
-- New rules
-- Add rules set
 
-# Password Cracking Setup README
-This details my password cracking setup with John the Ripper. Based on the facts listed below, all passwords are between 6 and 10 characters and there are no symbols in these wordlists. 
+# Password Cracking Wordlists README
+This contains the wordlists I use in my password cracking setup with John the Ripper.
 
 ## Contents
 * [Wordlists](#wordlists)
@@ -25,11 +19,14 @@ This details my password cracking setup with John the Ripper. Based on the facts
 
 ## Wordlists
 ### English Dictionaries
-* basicDictionary.txt (??? KB)
-    * I want this to be a basic dictionary with common words - used for doubleDictionary and appending to specialized wordlists
-    * This is a wordlist I've compiled that has the ??,000 most common words, animals, names, colors, elements, foods, jobs, body parts, and cities. This isn't meant to be exhaustive, but rather have words that the general public would most likely use in a password. All words over a length of 10 were removed and the wordlist has no symbols or uppercase characters.
-* bigDictionary.txt (??? KB)
-    * This contains a larger wordlist, used for password cracking and to be used with rules
+* engDictionary.txt (75 KB)
+    * This dictionary contains the 10,000 most common English words used. Most English speakers have a working vocabulary of about 20,000 words and know 40,000 words, so this is just a portion of that. 
+* engDictionaryEdited.txt (35 KB)
+    * This dictionary is an edited version of the engDictionary.txt list with 6167 words. There are no capital letters, spaces, or symbols, and all words are between 3 and 7 letters long. Common password base words have been added to this list also.
+* engDictionaryLarge.txt (4.7 MB)
+    * This dictionary contains all the words in the English language (466,545 words). It is meant to be much more extensive than engDictionary.txt. 
+* engDictionaryLargeEdited.txt (2.4 MB)
+    * This dictionary is an edited version of the engDictionaryLarge.txt list with 268,333 words. There are no capital letters, spaces, or symbols, and all words are between 6 and 10 letters long. Common password base words have been added to this list also.
 * doubleDictionary.txt (??? GB)
 
 ### Other Language Dictionaries
@@ -47,17 +44,17 @@ This details my password cracking setup with John the Ripper. Based on the facts
     * https://github.com/serapath/bip39wordlist
 
 ### Specialized Wordlists
-Only passwords between 6 and 10 characters long are included. Any words or names that also appear in dictionary.txt were removed from these wordlists. All symbols and capital letters have been removed. 
+Only passwords between 6 and 10 characters long are included. Most words that also appear in any English dictionaries were removed from these wordlists. All symbols, capital letters, and spaces have been removed.
 
-* starTrek.txt (??? MB)
-    * This wordlist contains 400 commonly used words, major characters, nicknames, slang, etc. as the base words.
-* starWars.txt (??? MB)
-    * This wordlist contains 400 major characters, creatures, alien races, worlds, objects, slang, quotes, vehicles, weapons, etc. as the base words.
-* harryPotter.txt (??? MB)
-    * This wordlist contains 420 major characters, spells, creatures, book titles, places, items, quidditch positions, slang, etc. as the base words.
-* usCanadaLocations.txt (??? MB)
-    * This wordlist contains 13,000 cities, counties, provinces, and states of the United States and Canada as the base words.
-* gameOfThrones.txt (??? MB)
+* starTrek.txt (4 KB)
+    * This wordlist contains 369 commonly used words, major characters, nicknames, slang, etc.
+* starWars.txt (3 KB)
+    * This wordlist contains 323 major characters, creatures, alien races, worlds, objects, slang, quotes, vehicles, weapons, etc.
+* harryPotter.txt (4 KB)
+    * This wordlist contains 375 major characters, spells, creatures, book titles, places, items, quidditch positions, slang, etc.
+* usCanadaLocations.txt (89 KB)
+    * This wordlist contains 9,734 cities, counties, provinces, and states of the United States and Canada.
+* gameOfThrones.txt (2 KB)
     * This wordlist contains
 * internationalLocations.txt (https://simplemaps.com/data/world-cities + countries + islands + etc.)
 * doctorWho.txt
@@ -88,6 +85,16 @@ Only passwords between 6 and 10 characters long are included. Any words or names
 * crackStation.txt (14.6 GB)
     * This is a list from [crackstation.net](https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm) that contains every wordlist, dictionary, and password database leak that the creator could find, along with every word in Wikipedia from 2010 and books from Project Gutenberg.
 
+## Rules
+I created a few of my own custom rules that can be put into the john.conf file in /etc/john. These rules, when used in a `john` command, are automatically applied to each word. 
+
+* numbersLong - this rule adds numbers either before a word or after a word. The numbers go from 0-9999. This is for both capitalized versions and uncapitalized versions of the word, plus it runs just the capital word with no numbers also. This multiplies the number of possible passwords by 44,441, since each word will have 44,441 variations of it run. 
+* numbersShort - this rule adds numbers either before a word or after a word. The numbers go from 0-99. This is for both capitalized versions and uncapitalized versions of the word, plus it runs just the capital word with no numbers also. This multiplies the number of possible passwords by 441, since each word will have 441 variations of it run.
+* capital - this rule adds each word with the first letter capitalized, which doubles the number of possible passwords tried. 
+* symbolsLong - This includes a very long list of possible password variations that include common symbols and digits. This multiplies the number of possible passwords by 3112. 
+* symbolsShort - This includes a short list of possible password variations with common symbols. It's mainly exclamation marks and some @ symbols. This multiplies the number of possible passwords by 12. 
+* leet - these basic 1337 (leet) rules have been copied from one of the JTR preset rules options and separated. Please note that there are several possibilities for leet rules, so I may make an extended version of this at some time.
+
 ## How to Use
 * Make sure John the Ripper and perl are installed
 * Edit the john.conf file and insert the rules found in johnrules.rul
@@ -95,7 +102,7 @@ Only passwords between 6 and 10 characters long are included. Any words or names
     * Download crackStation.txt from [crackstation.net](https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm)
     * Depending on download and file read/write speeds, this can take approximately 20 minutes
 * To produce engDoubleDictionary.txt
-* Other useful commands for cleaning/preparing wordlists
+* Other useful commands for cleaning/preparing wordlists:
     * `perl -lne 'length()>5 && length()<11 && print' file1.txt > file2.txt;` - this perl command removes all lines that do NOT have a length of 6-10.
     * `tr '[:upper:]' '[:lower:]' < file1.txt > file2.txt` - this Linux command turns all uppercase characters to lowercase characters
     * `grep -v '[[:upper:]]' file1.txt > file2.txt` - this Linux command removes all lines with uppercase characters

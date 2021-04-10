@@ -1,4 +1,4 @@
-[List.Rules:numbers]
+[List.Rules:numbersLong]
 cAz""
 cAz"[0-9]"
 cAz"[0-9][0-9]"
@@ -17,6 +17,78 @@ A0"[0-9][0-9]"
 A0"[0-9][0-9][0-9]"
 A0"[0-9][0-9][0-9][0-9]"
 
-//symbols
-//basic
-//leet
+[List.Rules:numbersShort]
+cAz""
+cAz"[0-9]"
+cAz"[0-9][0-9]"
+Az"[0-9]"
+Az"[0-9][0-9]"
+cA0"[0-9]"
+cA0"[0-9][0-9]"
+A0"[0-9]"
+A0"[0-9][0-9]"
+
+[List.Rules:capital]
+cAz""
+
+[List.Rules:symbolsLong]
+cAz"!"
+cAz"!!"
+cAz"!!!"
+cAz"[0-9]!"
+cAz"[0-9][0-9]!"
+cAz"[.-][0-9]"
+cAz"[.-][0-9][0-9]"
+cAz"!![0-9][0-9]"
+cAz"[0-9][!@][0-9]!"
+cAz"[!@][0-9][!@][0-9]"
+cAz"[0-9][!@.-][0-9]"
+cAz"[0-9]!!!"
+cAz"[0-9]!!"
+cAz"[0-9][0-9]!!"
+Az"!"
+Az"!!"
+Az"!!!"
+Az"[0-9]!"
+Az"[0-9][0-9]!"
+Az"[.-][0-9]"
+Az"[.-][0-9][0-9]"
+Az"!![0-9][0-9]"
+Az"[0-9][!@][0-9]!"
+Az"[!@][0-9][!@][0-9]"
+Az"[0-9][!@.-][0-9]"
+Az"[0-9]!!!"
+Az"[0-9]!!"
+Az"[0-9][0-9]!!"
+cA0"[!@]"
+cA0"!!"
+A0"[!@]"
+A0"!!"
+
+[List.Rules:symbolsShort]
+cAz"!"
+cAz"!!"
+cAz"!!!"
+Az"!"
+Az"!!"
+Az"!!!"
+cA0"[!@]"
+cA0"!!"
+A0"[!@]"
+A0"!!"
+
+[List.Rules:leet]
+-[:c] l /[aelos] s\0\p[4310$] (?\p1[za] \p1[:c]
+-[:c] l /a /[elos] sa4 s\0\p[310$] (?\p1[za] \p1[:c]
+-[:c] l /e /[los] se3 s\0\p[10$] (?\p1[za] \p1[:c]
+-[:c] l /l /[os] sl1 s\0\p[0$] (?\p1[za] \p1[:c]
+-[:c] l /o /s so0 ss$ (?\p1[za] \p1[:c]
+-[:c] l /a /e /[los] sa4 se3 s\0\p[10$] (?\p1[za] \p1[:c]
+-[:c] l /a /l /[os] sa4 sl1 s\0\p[0$] (?\p1[za] \p1[:c]
+-[:c] l /a /o /s sa4 so0 ss$ (?\p1[za] \p1[:c]
+-[:c] l /e /l /[os] se3 sl1 s\0\p[0$] (?\p1[za] \p1[:c]
+-[:c] l /[el] /o /s s\0\p[31] so0 ss$ (?\p1[za] \p1[:c]
+-[:c] l /a /e /l /[os] sa4 se3 sl1 s\0\p[0$] (?\p1[za] \p1[:c]
+-[:c] l /a /[el] /o /s sa4 s\0\p[31] so0 ss$ (?\p1[za] \p1[:c]
+-[:c] l /e /l /o /s se3 sl1 so0 ss$ (?\p1[za] \p1[:c] 
+-[:c] l /a /e /l /o /s sa4 se3 sl1 so0 ss$ (?\p1[za] \p1[:c]
