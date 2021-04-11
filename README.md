@@ -1,8 +1,6 @@
 Todo:
 - Create all the specialized wordlists
 - Create details program
-- Search through https://github.com/topics/wordlist
-- Better test times
 
 # Password Cracking Wordlists README
 This contains the wordlists I use in my password cracking setup with John the Ripper.
@@ -15,7 +13,6 @@ This contains the wordlists I use in my password cracking setup with John the Ri
     * [Other](#other)
 * [Rules](#rules)
 * [How to Use](#how-to-use)
-* [Time](#time)
 * [Individualized Wordlists](#individualized-wordlists)
 
 ## Wordlists
@@ -59,7 +56,8 @@ Only passwords between 6 and 10 characters long are included. Most words that al
     * This wordlist contains 132 words, phrases, places, and people from the Game of Thrones universe. 
 * anime.txt (315 KB)
     * This wordlist contains 38,439 characters, places, and words from an animanga wordlist contained [here](https://github.com/ryuuganime/animanga-wordlist). Note - when I get a Japanese dictionary, I will remove all words from this wordlist that are already in that one. Also, words of length 5 *have* been included in this wordlist.
-* internationalLocations.txt (https://simplemaps.com/data/world-cities + countries + islands + etc.)
+* internationalLocations.txt (124 KB)
+    * This wordlist contains 15,154 international cities, countries, islands, continents, and other various locations. Only words between 5 and 10 characters have been included in this list. All entries that are already in the English dictionary and usCanadaLocations.txt have been removed from this list. 
 * doctorWho.txt
 * lds.txt
 * music.txt
@@ -110,9 +108,6 @@ I created a few of my own custom rules that can be put into the john.conf file i
     * `sort file1.txt > file2.txt; uniq file2.txt > file3.txt` - these commands sort all the lines alphabetically, then removes all duplicate lines
     * `tr -cd '[:alnum:]\n ' < file1.txt > file2.txt` - this removes all non-alphanumeric characters (except newlines and spaces), which can be helpful when dealing with symbols that aren't available on a normal keyboard
     * `comm -23 <(sort file1.txt) <(sort file2.txt) > file1.txt` - this command keeps everything that's unique in file1.txt (or everything in file1.txt that's NOT in file2.txt), this can eliminate duplicates across wordlists
-
-## Times
-**Based off of my personal computer's specs. I have an i7-10510U processor (8 processing threads, 1.80 GHz base processing speed), 12 GB of RAM, and a Solid State Drive. These times were also computed with no/few other programs running.*
 
 ## Individualized Wordlists
 The point of list of details is to find words that aren't on my wordlist, or uncommon words/phrases
