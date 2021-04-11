@@ -1,6 +1,7 @@
 Todo:
 - Create all the specialized wordlists
 - Create details program
+- Add links to specific wordlists
 
 # Password Cracking Wordlists README
 This contains the wordlists I use in my password cracking setup with John the Ripper.
