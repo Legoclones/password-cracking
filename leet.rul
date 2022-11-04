@@ -1,0 +1,255 @@
+/o so0
+/a sa4
+/e se3
+/i si1
+/l sl1
+/B sB8
+/s ss5
+/t st7
+/o so0 /a sa4
+/o so0 /e se3
+/o so0 /i si1
+/o so0 /l sl1
+/o so0 /B sB8
+/o so0 /s ss5
+/o so0 /t st7
+/a sa4 /e se3
+/a sa4 /i si1
+/a sa4 /l sl1
+/a sa4 /B sB8
+/a sa4 /s ss5
+/a sa4 /t st7
+/e se3 /i si1
+/e se3 /l sl1
+/e se3 /B sB8
+/e se3 /s ss5
+/e se3 /t st7
+/i si1 /l sl1
+/i si1 /B sB8
+/i si1 /s ss5
+/i si1 /t st7
+/l sl1 /B sB8
+/l sl1 /s ss5
+/l sl1 /t st7
+/B sB8 /s ss5
+/B sB8 /t st7
+/s ss5 /t st7
+/o so0 /a sa4 /e se3
+/o so0 /a sa4 /i si1
+/o so0 /a sa4 /l sl1
+/o so0 /a sa4 /B sB8
+/o so0 /a sa4 /s ss5
+/o so0 /a sa4 /t st7
+/o so0 /e se3 /i si1
+/o so0 /e se3 /l sl1
+/o so0 /e se3 /B sB8
+/o so0 /e se3 /s ss5
+/o so0 /e se3 /t st7
+/o so0 /i si1 /l sl1
+/o so0 /i si1 /B sB8
+/o so0 /i si1 /s ss5
+/o so0 /i si1 /t st7
+/o so0 /l sl1 /B sB8
+/o so0 /l sl1 /s ss5
+/o so0 /l sl1 /t st7
+/o so0 /B sB8 /s ss5
+/o so0 /B sB8 /t st7
+/o so0 /s ss5 /t st7
+/a sa4 /e se3 /i si1
+/a sa4 /e se3 /l sl1
+/a sa4 /e se3 /B sB8
+/a sa4 /e se3 /s ss5
+/a sa4 /e se3 /t st7
+/a sa4 /i si1 /l sl1
+/a sa4 /i si1 /B sB8
+/a sa4 /i si1 /s ss5
+/a sa4 /i si1 /t st7
+/a sa4 /l sl1 /B sB8
+/a sa4 /l sl1 /s ss5
+/a sa4 /l sl1 /t st7
+/a sa4 /B sB8 /s ss5
+/a sa4 /B sB8 /t st7
+/a sa4 /s ss5 /t st7
+/e se3 /i si1 /l sl1
+/e se3 /i si1 /B sB8
+/e se3 /i si1 /s ss5
+/e se3 /i si1 /t st7
+/e se3 /l sl1 /B sB8
+/e se3 /l sl1 /s ss5
+/e se3 /l sl1 /t st7
+/e se3 /B sB8 /s ss5
+/e se3 /B sB8 /t st7
+/e se3 /s ss5 /t st7
+/i si1 /l sl1 /B sB8
+/i si1 /l sl1 /s ss5
+/i si1 /l sl1 /t st7
+/i si1 /B sB8 /s ss5
+/i si1 /B sB8 /t st7
+/i si1 /s ss5 /t st7
+/l sl1 /B sB8 /s ss5
+/l sl1 /B sB8 /t st7
+/l sl1 /s ss5 /t st7
+/B sB8 /s ss5 /t st7
+/o so0 /a sa4 /e se3 /i si1
+/o so0 /a sa4 /e se3 /l sl1
+/o so0 /a sa4 /e se3 /B sB8
+/o so0 /a sa4 /e se3 /s ss5
+/o so0 /a sa4 /e se3 /t st7
+/o so0 /a sa4 /i si1 /l sl1
+/o so0 /a sa4 /i si1 /B sB8
+/o so0 /a sa4 /i si1 /s ss5
+/o so0 /a sa4 /i si1 /t st7
+/o so0 /a sa4 /l sl1 /B sB8
+/o so0 /a sa4 /l sl1 /s ss5
+/o so0 /a sa4 /l sl1 /t st7
+/o so0 /a sa4 /B sB8 /s ss5
+/o so0 /a sa4 /B sB8 /t st7
+/o so0 /a sa4 /s ss5 /t st7
+/o so0 /e se3 /i si1 /l sl1
+/o so0 /e se3 /i si1 /B sB8
+/o so0 /e se3 /i si1 /s ss5
+/o so0 /e se3 /i si1 /t st7
+/o so0 /e se3 /l sl1 /B sB8
+/o so0 /e se3 /l sl1 /s ss5
+/o so0 /e se3 /l sl1 /t st7
+/o so0 /e se3 /B sB8 /s ss5
+/o so0 /e se3 /B sB8 /t st7
+/o so0 /e se3 /s ss5 /t st7
+/o so0 /i si1 /l sl1 /B sB8
+/o so0 /i si1 /l sl1 /s ss5
+/o so0 /i si1 /l sl1 /t st7
+/o so0 /i si1 /B sB8 /s ss5
+/o so0 /i si1 /B sB8 /t st7
+/o so0 /i si1 /s ss5 /t st7
+/o so0 /l sl1 /B sB8 /s ss5
+/o so0 /l sl1 /B sB8 /t st7
+/o so0 /l sl1 /s ss5 /t st7
+/o so0 /B sB8 /s ss5 /t st7
+/a sa4 /e se3 /i si1 /l sl1
+/a sa4 /e se3 /i si1 /B sB8
+/a sa4 /e se3 /i si1 /s ss5
+/a sa4 /e se3 /i si1 /t st7
+/a sa4 /e se3 /l sl1 /B sB8
+/a sa4 /e se3 /l sl1 /s ss5
+/a sa4 /e se3 /l sl1 /t st7
+/a sa4 /e se3 /B sB8 /s ss5
+/a sa4 /e se3 /B sB8 /t st7
+/a sa4 /e se3 /s ss5 /t st7
+/a sa4 /i si1 /l sl1 /B sB8
+/a sa4 /i si1 /l sl1 /s ss5
+/a sa4 /i si1 /l sl1 /t st7
+/a sa4 /i si1 /B sB8 /s ss5
+/a sa4 /i si1 /B sB8 /t st7
+/a sa4 /i si1 /s ss5 /t st7
+/a sa4 /l sl1 /B sB8 /s ss5
+/a sa4 /l sl1 /B sB8 /t st7
+/a sa4 /l sl1 /s ss5 /t st7
+/a sa4 /B sB8 /s ss5 /t st7
+/e se3 /i si1 /l sl1 /B sB8
+/e se3 /i si1 /l sl1 /s ss5
+/e se3 /i si1 /l sl1 /t st7
+/e se3 /i si1 /B sB8 /s ss5
+/e se3 /i si1 /B sB8 /t st7
+/e se3 /i si1 /s ss5 /t st7
+/e se3 /l sl1 /B sB8 /s ss5
+/e se3 /l sl1 /B sB8 /t st7
+/e se3 /l sl1 /s ss5 /t st7
+/e se3 /B sB8 /s ss5 /t st7
+/i si1 /l sl1 /B sB8 /s ss5
+/i si1 /l sl1 /B sB8 /t st7
+/i si1 /l sl1 /s ss5 /t st7
+/i si1 /B sB8 /s ss5 /t st7
+/l sl1 /B sB8 /s ss5 /t st7
+/o so0 /a sa4 /e se3 /i si1 /l sl1
+/o so0 /a sa4 /e se3 /i si1 /B sB8
+/o so0 /a sa4 /e se3 /i si1 /s ss5
+/o so0 /a sa4 /e se3 /i si1 /t st7
+/o so0 /a sa4 /e se3 /l sl1 /B sB8
+/o so0 /a sa4 /e se3 /l sl1 /s ss5
+/o so0 /a sa4 /e se3 /l sl1 /t st7
+/o so0 /a sa4 /e se3 /B sB8 /s ss5
+/o so0 /a sa4 /e se3 /B sB8 /t st7
+/o so0 /a sa4 /e se3 /s ss5 /t st7
+/o so0 /a sa4 /i si1 /l sl1 /B sB8
+/o so0 /a sa4 /i si1 /l sl1 /s ss5
+/o so0 /a sa4 /i si1 /l sl1 /t st7
+/o so0 /a sa4 /i si1 /B sB8 /s ss5
+/o so0 /a sa4 /i si1 /B sB8 /t st7
+/o so0 /a sa4 /i si1 /s ss5 /t st7
+/o so0 /a sa4 /l sl1 /B sB8 /s ss5
+/o so0 /a sa4 /l sl1 /B sB8 /t st7
+/o so0 /a sa4 /l sl1 /s ss5 /t st7
+/o so0 /a sa4 /B sB8 /s ss5 /t st7
+/o so0 /e se3 /i si1 /l sl1 /B sB8
+/o so0 /e se3 /i si1 /l sl1 /s ss5
+/o so0 /e se3 /i si1 /l sl1 /t st7
+/o so0 /e se3 /i si1 /B sB8 /s ss5
+/o so0 /e se3 /i si1 /B sB8 /t st7
+/o so0 /e se3 /i si1 /s ss5 /t st7
+/o so0 /e se3 /l sl1 /B sB8 /s ss5
+/o so0 /e se3 /l sl1 /B sB8 /t st7
+/o so0 /e se3 /l sl1 /s ss5 /t st7
+/o so0 /e se3 /B sB8 /s ss5 /t st7
+/o so0 /i si1 /l sl1 /B sB8 /s ss5
+/o so0 /i si1 /l sl1 /B sB8 /t st7
+/o so0 /i si1 /l sl1 /s ss5 /t st7
+/o so0 /i si1 /B sB8 /s ss5 /t st7
+/o so0 /l sl1 /B sB8 /s ss5 /t st7
+/a sa4 /e se3 /i si1 /l sl1 /B sB8
+/a sa4 /e se3 /i si1 /l sl1 /s ss5
+/a sa4 /e se3 /i si1 /l sl1 /t st7
+/a sa4 /e se3 /i si1 /B sB8 /s ss5
+/a sa4 /e se3 /i si1 /B sB8 /t st7
+/a sa4 /e se3 /i si1 /s ss5 /t st7
+/a sa4 /e se3 /l sl1 /B sB8 /s ss5
+/a sa4 /e se3 /l sl1 /B sB8 /t st7
+/a sa4 /e se3 /l sl1 /s ss5 /t st7
+/a sa4 /e se3 /B sB8 /s ss5 /t st7
+/a sa4 /i si1 /l sl1 /B sB8 /s ss5
+/a sa4 /i si1 /l sl1 /B sB8 /t st7
+/a sa4 /i si1 /l sl1 /s ss5 /t st7
+/a sa4 /i si1 /B sB8 /s ss5 /t st7
+/a sa4 /l sl1 /B sB8 /s ss5 /t st7
+/e se3 /i si1 /l sl1 /B sB8 /s ss5
+/e se3 /i si1 /l sl1 /B sB8 /t st7
+/e se3 /i si1 /l sl1 /s ss5 /t st7
+/e se3 /i si1 /B sB8 /s ss5 /t st7
+/e se3 /l sl1 /B sB8 /s ss5 /t st7
+/i si1 /l sl1 /B sB8 /s ss5 /t st7
+/o so0 /a sa4 /e se3 /i si1 /l sl1 /B sB8
+/o so0 /a sa4 /e se3 /i si1 /l sl1 /s ss5
+/o so0 /a sa4 /e se3 /i si1 /l sl1 /t st7
+/o so0 /a sa4 /e se3 /i si1 /B sB8 /s ss5
+/o so0 /a sa4 /e se3 /i si1 /B sB8 /t st7
+/o so0 /a sa4 /e se3 /i si1 /s ss5 /t st7
+/o so0 /a sa4 /e se3 /l sl1 /B sB8 /s ss5
+/o so0 /a sa4 /e se3 /l sl1 /B sB8 /t st7
+/o so0 /a sa4 /e se3 /l sl1 /s ss5 /t st7
+/o so0 /a sa4 /e se3 /B sB8 /s ss5 /t st7
+/o so0 /a sa4 /i si1 /l sl1 /B sB8 /s ss5
+/o so0 /a sa4 /i si1 /l sl1 /B sB8 /t st7
+/o so0 /a sa4 /i si1 /l sl1 /s ss5 /t st7
+/o so0 /a sa4 /i si1 /B sB8 /s ss5 /t st7
+/o so0 /a sa4 /l sl1 /B sB8 /s ss5 /t st7
+/o so0 /e se3 /i si1 /l sl1 /B sB8 /s ss5
+/o so0 /e se3 /i si1 /l sl1 /B sB8 /t st7
+/o so0 /e se3 /i si1 /l sl1 /s ss5 /t st7
+/o so0 /e se3 /i si1 /B sB8 /s ss5 /t st7
+/o so0 /e se3 /l sl1 /B sB8 /s ss5 /t st7
+/o so0 /i si1 /l sl1 /B sB8 /s ss5 /t st7
+/a sa4 /e se3 /i si1 /l sl1 /B sB8 /s ss5
+/a sa4 /e se3 /i si1 /l sl1 /B sB8 /t st7
+/a sa4 /e se3 /i si1 /l sl1 /s ss5 /t st7
+/a sa4 /e se3 /i si1 /B sB8 /s ss5 /t st7
+/a sa4 /e se3 /l sl1 /B sB8 /s ss5 /t st7
+/a sa4 /i si1 /l sl1 /B sB8 /s ss5 /t st7
+/e se3 /i si1 /l sl1 /B sB8 /s ss5 /t st7
+/o so0 /a sa4 /e se3 /i si1 /l sl1 /B sB8 /s ss5
+/o so0 /a sa4 /e se3 /i si1 /l sl1 /B sB8 /t st7
+/o so0 /a sa4 /e se3 /i si1 /l sl1 /s ss5 /t st7
+/o so0 /a sa4 /e se3 /i si1 /B sB8 /s ss5 /t st7
+/o so0 /a sa4 /e se3 /l sl1 /B sB8 /s ss5 /t st7
+/o so0 /a sa4 /i si1 /l sl1 /B sB8 /s ss5 /t st7
+/o so0 /e se3 /i si1 /l sl1 /B sB8 /s ss5 /t st7
+/a sa4 /e se3 /i si1 /l sl1 /B sB8 /s ss5 /t st7
+/o so0 /a sa4 /e se3 /i si1 /l sl1 /B sB8 /s ss5 /t st7
